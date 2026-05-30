@@ -36,29 +36,19 @@ const EventDetailScrn = () => {
 
   return (
     <View style={styles.screen}>
-      <View style={styles.hero}>
-        <Image source={item.image} style={styles.heroImage} resizeMode="cover" />
-        <LinearGradient
-          colors={['rgba(6,12,24,0.2)', 'rgba(0,0,0,0)', 'rgba(0,0,0,0.55)', '#060C18']}
-          locations={[0, 0.35, 0.75, 1]}
-          style={StyleSheet.absoluteFill}
-        />
-        <View style={[styles.heroTop, {paddingTop: insets.top + 8}]}>
-          <Pressable
-            onPress={() => navigation.goBack()}
-            style={styles.roundBtn}
-            accessibilityRole="button"
-            accessibilityLabel="Go back">
-            <Image
-              source={require('../../elements/i/backicon.png')}
-              style={styles.backIcon}
-            />
-          </Pressable>
-        </View>
-        <View style={styles.heroTitles}>
-          <Text style={styles.eyebrow}>{item.eyebrow}</Text>
-          <Text style={styles.heroTitle}>{item.title}</Text>
-        </View>
+      <View
+        style={[styles.floatingControls, {paddingTop: insets.top + 8}]}
+        pointerEvents="box-none">
+        <Pressable
+          onPress={() => navigation.goBack()}
+          style={styles.roundBtn}
+          accessibilityRole="button"
+          accessibilityLabel="Go back">
+          <Image
+            source={require('../../elements/i/backicon.png')}
+            style={styles.backIcon}
+          />
+        </Pressable>
       </View>
 
       <ScrollView
@@ -68,6 +58,29 @@ const EventDetailScrn = () => {
           {paddingBottom: Math.max(insets.bottom, 24) + 16},
         ]}
         showsVerticalScrollIndicator={false}>
+        <View style={styles.hero}>
+          <Image
+            source={item.image}
+            style={styles.heroImage}
+            resizeMode="cover"
+          />
+          <LinearGradient
+            colors={[
+              'rgba(6,12,24,0.2)',
+              'rgba(0,0,0,0)',
+              'rgba(0,0,0,0.55)',
+              '#060C18',
+            ]}
+            locations={[0, 0.35, 0.75, 1]}
+            style={StyleSheet.absoluteFill}
+          />
+          <View style={styles.heroTitles}>
+            <Text style={styles.eyebrow}>{item.eyebrow}</Text>
+            <Text style={styles.heroTitle}>{item.title}</Text>
+          </View>
+        </View>
+
+        <View style={styles.body}>
         <View style={styles.infoRow}>
           <View style={styles.infoCard}>
             <Text style={styles.infoIcon}>◎</Text>
@@ -136,6 +149,7 @@ const EventDetailScrn = () => {
             </View>
           ))}
         </Section>
+        </View>
       </ScrollView>
     </View>
   );
@@ -157,11 +171,12 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
   },
-  heroTop: {
+  floatingControls: {
     position: 'absolute',
     top: 0,
     left: 0,
     right: 0,
+    zIndex: 10,
     paddingHorizontal: 16,
   },
   roundBtn: {
@@ -200,6 +215,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   content: {
+    flexGrow: 1,
+  },
+  body: {
     paddingHorizontal: 20,
     paddingTop: 16,
     gap: 16,

@@ -1,7 +1,15 @@
 import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import React from 'react';
-import {FlatList, Image, Pressable, StyleSheet, Text, View} from 'react-native';
+import {
+  FlatList,
+  Image,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
@@ -63,33 +71,51 @@ const SavedScrn = () => {
 
   const hasItems = savedItems.length > 0;
 
-  return (
-    <View style={[styles.screen, {paddingTop: insets.top}]}>
+  const listHeader = (
+    <>
+      <View style={{height: insets.top}} />
       <View style={styles.header}>
         <Text style={styles.brand}>Your Collection</Text>
         <Text style={styles.title}>Saved Cards</Text>
       </View>
+    </>
+  );
 
-      {hasItems ? (
-        <FlatList
-          data={savedItems}
-          keyExtractor={item => item.id}
+  if (!hasItems) {
+    return (
+      <View style={styles.screen}>
+        <ScrollView
           contentContainerStyle={[
-            styles.list,
+            styles.emptyScroll,
             {paddingBottom: Math.max(insets.bottom, 16) + 80},
           ]}
-          showsVerticalScrollIndicator={false}
-          renderItem={({item}) => (
-            <SavedCard
-              item={item}
-              onPress={() => navigation.navigate('GuideDetail', {item})}
-              onToggleSave={() => toggleSave(item.id)}
-            />
-          )}
-        />
-      ) : (
-        <SavedEmpty />
-      )}
+          showsVerticalScrollIndicator={false}>
+          {listHeader}
+          <SavedEmpty />
+        </ScrollView>
+      </View>
+    );
+  }
+
+  return (
+    <View style={styles.screen}>
+      <FlatList
+        data={savedItems}
+        keyExtractor={item => item.id}
+        ListHeaderComponent={listHeader}
+        contentContainerStyle={[
+          styles.list,
+          {paddingBottom: Math.max(insets.bottom, 16) + 80},
+        ]}
+        showsVerticalScrollIndicator={false}
+        renderItem={({item}) => (
+          <SavedCard
+            item={item}
+            onPress={() => navigation.navigate('GuideDetail', {item})}
+            onToggleSave={() => toggleSave(item.id)}
+          />
+        )}
+      />
     </View>
   );
 };
@@ -167,12 +193,14 @@ const styles = StyleSheet.create({
     lineHeight: 28,
     color: '#F0EAD6',
   },
+  emptyScroll: {
+    flexGrow: 1,
+  },
   emptyWrap: {
-    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 32,
-    paddingBottom: 100,
+    paddingVertical: 80,
   },
   emptyIconCircle: {
     width: 64,

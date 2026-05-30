@@ -68,8 +68,9 @@ const GuiddeScrn = () => {
 
   const items = useMemo(() => getFilteredGuideItems(filter), [filter]);
 
-  return (
-    <View style={[styles.screen, {paddingTop: insets.top}]}>
+  const listHeader = (
+    <>
+      <View style={{height: insets.top}} />
       <View style={styles.header}>
         <View>
           <Text style={styles.brand}>Mondial</Text>
@@ -82,7 +83,6 @@ const GuiddeScrn = () => {
           />
         </Pressable>
       </View>
-
       <View style={styles.filters}>
         {FILTERS.map(({key, label, icon}) => {
           const active = filter === key;
@@ -111,10 +111,15 @@ const GuiddeScrn = () => {
           );
         })}
       </View>
+    </>
+  );
 
+  return (
+    <View style={styles.screen}>
       <FlatList
         data={items}
         keyExtractor={item => item.id}
+        ListHeaderComponent={listHeader}
         contentContainerStyle={[
           styles.list,
           {paddingBottom: Math.max(insets.bottom, 16) + 80},
@@ -144,7 +149,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 20,
     paddingTop: 12,
     paddingBottom: 8,
   },
@@ -180,7 +184,6 @@ const styles = StyleSheet.create({
   filters: {
     flexDirection: 'row',
     gap: 8,
-    paddingHorizontal: 20,
     paddingBottom: 12,
   },
   filterChip: {

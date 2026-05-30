@@ -1,6 +1,7 @@
 import {
   Image,
   ImageBackground,
+  Platform,
   ScrollView,
   StyleSheet,
   Text,
@@ -93,9 +94,22 @@ const Loadder = () => {
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}>
         <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-          <Image source={require('../../elements/i/loaderlogo.png')} />
-          <Text style={styles.title}>Mondial Casino</Text>
-          <Text style={styles.subtitle}>Resort & Collection</Text>
+          {Platform.OS === 'ios' ? (
+            <Image source={require('../../elements/i/loaderlogo.png')} />
+          ) : (
+            <Image
+              source={require('../../elements/i/loaderlogoand.png')}
+              style={{width: 150, height: 150}}
+            />
+          )}
+          {Platform.OS === 'ios' ? (
+            <>
+              <Text style={styles.title}>Mondial Casino</Text>
+              <Text style={styles.subtitle}>Resort & Collection</Text>
+            </>
+          ) : (
+            <Text style={styles.title}>Resort Guide Mondial</Text>
+          )}
         </View>
         <View style={styles.bottomWrap}>
           <WebView

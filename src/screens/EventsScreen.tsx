@@ -87,13 +87,13 @@ const EventsScreen = () => {
 
   const items = useMemo(() => getFilteredEvents(filter), [filter]);
 
-  return (
-    <View style={[styles.screen, {paddingTop: insets.top}]}>
+  const listHeader = (
+    <>
+      <View style={{height: insets.top}} />
       <View style={styles.header}>
         <Text style={styles.brand}>Plan Your Event</Text>
         <Text style={styles.title}>Event Ideas</Text>
       </View>
-
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -116,10 +116,15 @@ const EventsScreen = () => {
           );
         })}
       </ScrollView>
+    </>
+  );
 
+  return (
+    <View style={styles.screen}>
       <FlatList
         data={items}
         keyExtractor={item => item.id}
+        ListHeaderComponent={listHeader}
         contentContainerStyle={[
           styles.list,
           {paddingBottom: Math.max(insets.bottom, 16) + 80},
@@ -144,7 +149,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#060C18',
   },
   header: {
-    paddingHorizontal: 20,
     paddingTop: 12,
     paddingBottom: 8,
     gap: 2,
@@ -163,7 +167,6 @@ const styles = StyleSheet.create({
     color: '#F0EAD6',
   },
   filters: {
-    paddingHorizontal: 20,
     paddingBottom: 22,
     gap: 8,
   },

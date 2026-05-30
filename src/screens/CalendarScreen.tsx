@@ -47,7 +47,11 @@ const EventCard = ({event}: EventCardProps) => {
           <Text style={styles.eventTitle} numberOfLines={2}>
             {event.title}
           </Text>
-          <View style={[styles.tagPill, {backgroundColor: tagStyle.backgroundColor}]}>
+          <View
+            style={[
+              styles.tagPill,
+              {backgroundColor: tagStyle.backgroundColor},
+            ]}>
             <Text style={[styles.tagText, {color: tagStyle.color}]}>
               {event.tag}
             </Text>
@@ -93,10 +97,7 @@ const CalendarScreen = () => {
     [viewYear, viewMonth],
   );
 
-  const events = useMemo(
-    () => getEventsForDate(selectedDate),
-    [selectedDate],
-  );
+  const events = useMemo(() => getEventsForDate(selectedDate), [selectedDate]);
 
   const monthLabel = formatMonthLabel(viewYear, viewMonth);
 
@@ -113,13 +114,13 @@ const CalendarScreen = () => {
     }
   };
 
-  return (
-    <View style={[styles.screen, {paddingTop: insets.top}]}>
+  const listHeader = (
+    <>
+      <View style={{height: insets.top}} />
       <View style={styles.header}>
         <Text style={styles.brand}>What's On</Text>
         <Text style={styles.title}>Event Calendar</Text>
       </View>
-
       <View style={styles.monthRow}>
         <Pressable
           onPress={() => shiftMonth(-1)}
@@ -137,12 +138,12 @@ const CalendarScreen = () => {
           <Text style={styles.monthBtnIcon}>›</Text>
         </Pressable>
       </View>
-
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={styles.dateStrip}
-        style={styles.dateStripScroll}>
+        style={styles.dateStripScroll}
+        nestedScrollEnabled>
         {monthDays.map(({day, iso, weekday}) => {
           const selected = iso === selectedDate;
           const today = iso === CALENDAR_TODAY;
@@ -158,10 +159,7 @@ const CalendarScreen = () => {
                 today && styles.dateCellToday,
               ]}>
               <Text
-                style={[
-                  styles.dateWeekday,
-                  today && styles.dateWeekdayToday,
-                ]}>
+                style={[styles.dateWeekday, today && styles.dateWeekdayToday]}>
                 {weekday}
               </Text>
               <Text
@@ -174,36 +172,36 @@ const CalendarScreen = () => {
               </Text>
               {hasEvents && !today ? (
                 <View
-                  style={[
-                    styles.dateDot,
-                    selected && styles.dateDotSelected,
-                  ]}
+                  style={[styles.dateDot, selected && styles.dateDotSelected]}
                 />
               ) : null}
             </Pressable>
           );
         })}
       </ScrollView>
-
       {events.length > 0 ? (
-        <FlatList
-          data={events}
-          keyExtractor={item => item.id}
-          contentContainerStyle={[
-            styles.list,
-            {paddingBottom: Math.max(insets.bottom, 16) + 80},
-          ]}
-          showsVerticalScrollIndicator={false}
-          ListHeaderComponent={
-            <Text style={styles.eventsCount}>
-              {events.length} event{events.length === 1 ? '' : 's'} scheduled
-            </Text>
-          }
-          renderItem={({item}) => <EventCard event={item} />}
-        />
-      ) : (
-        <CalendarEmpty />
-      )}
+        <Text style={[styles.eventsCount, styles.eventsCountInHeader]}>
+          {events.length} event{events.length === 1 ? '' : 's'} scheduled
+        </Text>
+      ) : null}
+    </>
+  );
+
+  return (
+    <View style={styles.screen}>
+      <FlatList
+        data={events}
+        keyExtractor={item => item.id}
+        ListHeaderComponent={listHeader}
+        ListEmptyComponent={CalendarEmpty}
+        contentContainerStyle={[
+          styles.list,
+          events.length === 0 && styles.listEmpty,
+          {paddingBottom: Math.max(insets.bottom, 16) + 80},
+        ]}
+        showsVerticalScrollIndicator={false}
+        renderItem={({item}) => <EventCard event={item} />}
+      />
     </View>
   );
 };
@@ -216,7 +214,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#060C18',
   },
   header: {
-    paddingHorizontal: 20,
     paddingTop: 12,
     paddingBottom: 8,
     gap: 2,
@@ -238,7 +235,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 20,
     marginBottom: 12,
   },
   monthBtn: {
@@ -268,7 +264,6 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   dateStrip: {
-    paddingHorizontal: 20,
     gap: 8,
   },
   dateCell: {
@@ -324,11 +319,17 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     gap: 16,
   },
+  listEmpty: {
+    flexGrow: 1,
+  },
   eventsCount: {
     fontSize: 12,
     lineHeight: 16,
     color: '#7A8BA8',
     marginBottom: 16,
+  },
+  eventsCountInHeader: {
+    paddingHorizontal: 20,
   },
   eventCard: {
     flexDirection: 'row',
@@ -414,11 +415,10 @@ const styles = StyleSheet.create({
     color: '#7A8BA8',
   },
   emptyWrap: {
-    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 32,
-    paddingBottom: 100,
+    paddingVertical: 48,
   },
   emptyIconCircle: {
     width: 56,

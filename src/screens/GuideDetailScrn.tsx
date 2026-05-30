@@ -45,41 +45,32 @@ const GuideDetailScrn = () => {
 
   return (
     <View style={styles.screen}>
-      <View style={styles.hero}>
-        <Image
-          source={item.image}
-          style={styles.heroImage}
-          resizeMode="cover"
-        />
-        <LinearGradient
-          colors={['rgba(0,0,0,0)', '#060C18']}
-          style={styles.heroGradient}
-        />
-        <View style={[styles.heroControls, {paddingTop: insets.top + 8}]}>
-          <Pressable
-            onPress={() => navigation.goBack()}
-            style={styles.roundBtn}
-            accessibilityRole="button"
-            accessibilityLabel="Go back">
-            <Image
-              source={require('../../elements/i/backicon.png')}
-              style={styles.backIcon}
-            />
-          </Pressable>
-          <Pressable
-            onPress={() => toggleSave(item.id)}
-            style={[styles.roundBtn, saved && {backgroundColor: '#C9A020'}]}
-            accessibilityRole="button"
-            accessibilityLabel={saved ? 'Remove from saved' : 'Save'}>
-            <Image
-              source={
-                saved
-                  ? require('../../elements/i/savediconn.png')
-                  : require('../../elements/i/savedicon.png')
-              }
-            />
-          </Pressable>
-        </View>
+      <View
+        style={[styles.floatingControls, {paddingTop: insets.top + 8}]}
+        pointerEvents="box-none">
+        <Pressable
+          onPress={() => navigation.goBack()}
+          style={styles.roundBtn}
+          accessibilityRole="button"
+          accessibilityLabel="Go back">
+          <Image
+            source={require('../../elements/i/backicon.png')}
+            style={styles.backIcon}
+          />
+        </Pressable>
+        <Pressable
+          onPress={() => toggleSave(item.id)}
+          style={[styles.roundBtn, saved && {backgroundColor: '#C9A020'}]}
+          accessibilityRole="button"
+          accessibilityLabel={saved ? 'Remove from saved' : 'Save'}>
+          <Image
+            source={
+              saved
+                ? require('../../elements/i/savediconn.png')
+                : require('../../elements/i/savedicon.png')
+            }
+          />
+        </Pressable>
       </View>
 
       <ScrollView
@@ -89,44 +80,58 @@ const GuideDetailScrn = () => {
           {paddingBottom: Math.max(insets.bottom, 24) + 16},
         ]}
         showsVerticalScrollIndicator={false}>
-        <Text style={styles.subtitle}>{item.subtitle}</Text>
-        <Text style={styles.name}>{item.name}</Text>
-        <GoldRule />
-
-        <View style={styles.infoRow}>
-          <View style={styles.infoCard}>
-            <Image
-              source={require('../../elements/i/locationicon.png')}
-              style={styles.infoIcon}
-            />
-            <View style={styles.infoTextWrap}>
-              <Text style={styles.infoLabel}>Location</Text>
-              <Text style={styles.infoValue}>{item.location}</Text>
-            </View>
-          </View>
-          <View style={styles.infoCard}>
-            <Text style={styles.infoIcon}>◷</Text>
-            <View style={styles.infoTextWrap}>
-              <Text style={styles.infoLabel}>Hours</Text>
-              <Text style={styles.infoValue}>{item.hours}</Text>
-            </View>
-          </View>
+        <View style={styles.hero}>
+          <Image
+            source={item.image}
+            style={styles.heroImage}
+            resizeMode="cover"
+          />
+          <LinearGradient
+            colors={['rgba(0,0,0,0)', '#060C18']}
+            style={styles.heroGradient}
+          />
         </View>
 
-        <Text style={styles.description}>{item.description}</Text>
+        <View style={styles.body}>
+          <Text style={styles.subtitle}>{item.subtitle}</Text>
+          <Text style={styles.name}>{item.name}</Text>
+          <GoldRule />
 
-        <Text style={styles.highlightsTitle}>Highlights</Text>
-        <View style={styles.highlightsGrid}>
-          {highlightPairs.map((pair, rowIndex) => (
-            <View key={rowIndex} style={styles.highlightRowWrap}>
-              {pair.map(highlight => (
-                <View key={highlight} style={styles.highlightCol}>
-                  <HighlightItem text={highlight} />
-                </View>
-              ))}
-              {pair.length === 1 ? <View style={styles.highlightCol} /> : null}
+          <View style={styles.infoRow}>
+            <View style={styles.infoCard}>
+              <Image
+                source={require('../../elements/i/locationicon.png')}
+                style={styles.infoIcon}
+              />
+              <View style={styles.infoTextWrap}>
+                <Text style={styles.infoLabel}>Location</Text>
+                <Text style={styles.infoValue}>{item.location}</Text>
+              </View>
             </View>
-          ))}
+            <View style={styles.infoCard}>
+              <Text style={styles.infoIcon}>◷</Text>
+              <View style={styles.infoTextWrap}>
+                <Text style={styles.infoLabel}>Hours</Text>
+                <Text style={styles.infoValue}>{item.hours}</Text>
+              </View>
+            </View>
+          </View>
+
+          <Text style={styles.description}>{item.description}</Text>
+
+          <Text style={styles.highlightsTitle}>Highlights</Text>
+          <View style={styles.highlightsGrid}>
+            {highlightPairs.map((pair, rowIndex) => (
+              <View key={rowIndex} style={styles.highlightRowWrap}>
+                {pair.map(highlight => (
+                  <View key={highlight} style={styles.highlightCol}>
+                    <HighlightItem text={highlight} />
+                  </View>
+                ))}
+                {pair.length === 1 ? <View style={styles.highlightCol} /> : null}
+              </View>
+            ))}
+          </View>
         </View>
       </ScrollView>
     </View>
@@ -156,11 +161,12 @@ const styles = StyleSheet.create({
     bottom: 0,
     height: 64,
   },
-  heroControls: {
+  floatingControls: {
     position: 'absolute',
     top: 0,
     left: 0,
     right: 0,
+    zIndex: 10,
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingHorizontal: 16,
@@ -191,6 +197,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   content: {
+    flexGrow: 1,
+  },
+  body: {
     paddingHorizontal: 20,
     paddingTop: 12,
     gap: 16,

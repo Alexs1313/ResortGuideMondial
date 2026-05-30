@@ -13,9 +13,17 @@ import {
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 import {ServiceItem, SERVICES} from '../data/servicesData';
+import Orientation from 'react-native-orientation-locker';
+import {useFocusEffect} from '@react-navigation/native';
 
 const ServiceIcon = ({size = 22}: {size?: number}) => (
-  <View style={{width: size, height: size, alignItems: 'center', justifyContent: 'center'}}>
+  <View
+    style={{
+      width: size,
+      height: size,
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}>
     <View
       style={{
         width: size * 0.12,
@@ -42,7 +50,13 @@ const ServiceIcon = ({size = 22}: {size?: number}) => (
   </View>
 );
 
-const ClockIcon = ({size = 11, color = '#7A8BA8'}: {size?: number; color?: string}) => (
+const ClockIcon = ({
+  size = 11,
+  color = '#7A8BA8',
+}: {
+  size?: number;
+  color?: string;
+}) => (
   <View
     style={{
       width: size,
@@ -198,6 +212,15 @@ const ServiceesScreen = () => {
     setSelectedService(service);
   }, []);
 
+  useFocusEffect(
+    useCallback(() => {
+      Orientation.lockToPortrait();
+      return () => {
+        Orientation.unlockAllOrientations();
+      };
+    }, []),
+  );
+
   const closeOrder = useCallback(() => {
     setSelectedService(null);
     setOrderNote('');
@@ -215,17 +238,26 @@ const ServiceesScreen = () => {
 
   const listBottomPadding = Math.max(insets.bottom, 16) + 80;
 
-  return (
-    <View style={[styles.screen, {paddingTop: insets.top}]}>
+  const listHeader = (
+    <>
+      <View style={{height: insets.top}} />
       <View style={styles.header}>
         <Text style={styles.brand}>Exclusively Yours</Text>
         <Text style={styles.title}>Services</Text>
       </View>
+    </>
+  );
 
+  return (
+    <View style={styles.screen}>
       <FlatList
         data={SERVICES}
         keyExtractor={item => item.id}
-        contentContainerStyle={[styles.list, {paddingBottom: listBottomPadding}]}
+        ListHeaderComponent={listHeader}
+        contentContainerStyle={[
+          styles.list,
+          {paddingBottom: listBottomPadding},
+        ]}
         showsVerticalScrollIndicator={false}
         renderItem={({item}) => (
           <ServiceCard item={item} onAdd={() => openOrder(item)} />
@@ -235,13 +267,16 @@ const ServiceesScreen = () => {
       <Modal
         visible={selectedService !== null}
         transparent
+        statusBarTranslucent={Platform.OS === 'android'}
         animationType="slide"
         onRequestClose={closeOrder}>
         <KeyboardAvoidingView
           style={styles.modalRoot}
           behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
           <Pressable style={styles.backdrop} onPress={closeOrder}>
-            <Pressable style={styles.sheetWrap} onPress={e => e.stopPropagation()}>
+            <Pressable
+              style={styles.sheetWrap}
+              onPress={e => e.stopPropagation()}>
               {selectedService ? (
                 <OrderSheet
                   service={selectedService}
@@ -258,6 +293,7 @@ const ServiceesScreen = () => {
 
       <Modal
         visible={showSuccess}
+        statusBarTranslucent={Platform.OS === 'android'}
         transparent
         animationType="fade"
         onRequestClose={dismissSuccess}>
@@ -279,7 +315,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#060C18',
   },
   header: {
-    paddingHorizontal: 20,
     paddingTop: 12,
     paddingBottom: 8,
     gap: 2,
