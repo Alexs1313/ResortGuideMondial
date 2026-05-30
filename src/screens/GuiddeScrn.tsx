@@ -8,6 +8,7 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {useSaved} from '../context/SavedContext';
 import {GuideFilter, GuideItem, getFilteredGuideItems} from '../data/guideData';
 import {GuideStackParamList} from '../routes/GuideStackNav';
+import Layoutt from '../components/Layoutt';
 
 type GuideNav = StackNavigationProp<GuideStackParamList, 'GuiddeList'>;
 
@@ -74,7 +75,7 @@ const GuiddeScrn = () => {
       <View style={styles.header}>
         <View>
           <Text style={styles.brand}>Mondial</Text>
-          <Text style={styles.title}>Resort Guide</Text>
+          <Text style={styles.title}>Resort Explorer</Text>
         </View>
         <Pressable style={styles.searchBtn} accessibilityRole="button">
           <Image
@@ -115,8 +116,9 @@ const GuiddeScrn = () => {
   );
 
   return (
-    <View style={styles.screen}>
+    <Layoutt>
       <FlatList
+        scrollEnabled={false}
         data={items}
         keyExtractor={item => item.id}
         ListHeaderComponent={listHeader}
@@ -134,7 +136,7 @@ const GuiddeScrn = () => {
           />
         )}
       />
-    </View>
+    </Layoutt>
   );
 };
 

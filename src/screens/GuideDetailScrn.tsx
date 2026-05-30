@@ -15,6 +15,7 @@ import GoldRule from '../components/GoldRule';
 import {useSaved} from '../context/SavedContext';
 import {GuideStackParamList} from '../routes/GuideStackNav';
 import {SavedStackParamList} from '../routes/SavedStackNav';
+import Layoutt from '../components/Layoutt';
 
 type DetailRoute = RouteProp<
   GuideStackParamList & SavedStackParamList,
@@ -44,7 +45,7 @@ const GuideDetailScrn = () => {
   }
 
   return (
-    <View style={styles.screen}>
+    <Layoutt>
       <View
         style={[styles.floatingControls, {paddingTop: insets.top + 8}]}
         pointerEvents="box-none">
@@ -128,13 +129,15 @@ const GuideDetailScrn = () => {
                     <HighlightItem text={highlight} />
                   </View>
                 ))}
-                {pair.length === 1 ? <View style={styles.highlightCol} /> : null}
+                {pair.length === 1 ? (
+                  <View style={styles.highlightCol} />
+                ) : null}
               </View>
             ))}
           </View>
         </View>
       </ScrollView>
-    </View>
+    </Layoutt>
   );
 };
 
@@ -143,7 +146,6 @@ export default GuideDetailScrn;
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: '#060C18',
   },
   hero: {
     height: 256,

@@ -16,6 +16,7 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {useSaved} from '../context/SavedContext';
 import {GuideItem} from '../data/guideData';
 import {SavedStackParamList} from '../routes/SavedStackNav';
+import Layoutt from '../components/Layoutt';
 
 type SavedNav = StackNavigationProp<SavedStackParamList, 'SavedList'>;
 
@@ -58,8 +59,8 @@ const SavedEmpty = () => (
     </View>
     <Text style={styles.emptyTitle}>No Saved Items</Text>
     <Text style={styles.emptyText}>
-      Browse the Resort Guide and tap the bookmark icon to save your favorites
-      here.
+      Browse the Resort Explorer and tap the bookmark icon to save your
+      favorites here.
     </Text>
   </View>
 );
@@ -83,7 +84,7 @@ const SavedScrn = () => {
 
   if (!hasItems) {
     return (
-      <View style={styles.screen}>
+      <Layoutt>
         <ScrollView
           contentContainerStyle={[
             styles.emptyScroll,
@@ -93,13 +94,14 @@ const SavedScrn = () => {
           {listHeader}
           <SavedEmpty />
         </ScrollView>
-      </View>
+      </Layoutt>
     );
   }
 
   return (
-    <View style={styles.screen}>
+    <Layoutt>
       <FlatList
+        scrollEnabled={false}
         data={savedItems}
         keyExtractor={item => item.id}
         ListHeaderComponent={listHeader}
@@ -116,7 +118,7 @@ const SavedScrn = () => {
           />
         )}
       />
-    </View>
+    </Layoutt>
   );
 };
 

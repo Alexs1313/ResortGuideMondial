@@ -12,6 +12,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 import {EventsStackParamList} from '../routes/EventsStackNav';
+import Layoutt from '../components/Layoutt';
 
 type DetailRoute = RouteProp<EventsStackParamList, 'EventDetail'>;
 
@@ -35,7 +36,7 @@ const EventDetailScrn = () => {
   const {item} = params;
 
   return (
-    <View style={styles.screen}>
+    <Layoutt>
       <View
         style={[styles.floatingControls, {paddingTop: insets.top + 8}]}
         pointerEvents="box-none">
@@ -81,77 +82,79 @@ const EventDetailScrn = () => {
         </View>
 
         <View style={styles.body}>
-        <View style={styles.infoRow}>
-          <View style={styles.infoCard}>
-            <Text style={styles.infoIcon}>◎</Text>
-            <View style={styles.infoTextWrap}>
-              <Text style={styles.infoLabel}>Capacity</Text>
-              <Text style={styles.infoValue}>{item.capacity}</Text>
-            </View>
-          </View>
-          <View style={styles.infoCard}>
-            <Text style={styles.infoIcon}>✦</Text>
-            <View style={styles.infoTextWrap}>
-              <Text style={styles.infoLabel}>Décor Style</Text>
-              <Text style={styles.infoValue}>{item.decorType}</Text>
-            </View>
-          </View>
-        </View>
-
-        <View style={styles.roomRow}>
-          <Image
-            source={require('../../elements/i/locationicon.png')}
-            style={styles.roomIcon}
-          />
-          <Text style={styles.roomText}>{item.room}</Text>
-        </View>
-
-        <Section title="Event Concept">
-          <Text style={styles.bodyText}>{item.concept}</Text>
-        </Section>
-
-        <Section title="Decoration & Atmosphere">
-          {item.decoration.map(line => (
-            <View key={line} style={styles.bulletRow}>
-              <View style={styles.bulletDot} />
-              <Text style={styles.bulletText}>{line}</Text>
-            </View>
-          ))}
-        </Section>
-
-        <Section title="Sample Menu">
-          {item.menu.map((course, index) => (
-            <View
-              key={course}
-              style={[
-                styles.menuRow,
-                index < item.menu.length - 1 && styles.menuRowBorder,
-              ]}>
-              <Text style={styles.menuIndex}>{index + 1}</Text>
-              <Text style={styles.menuText}>{course}</Text>
-            </View>
-          ))}
-        </Section>
-
-        <Section title="Event Timeline">
-          {item.timeline.map((entry, index) => (
-            <View key={`${entry.time}-${entry.label}`} style={styles.timelineRow}>
-              <View style={styles.timelineRail}>
-                <View style={styles.timelineDot} />
-                {index < item.timeline.length - 1 ? (
-                  <View style={styles.timelineLine} />
-                ) : null}
-              </View>
-              <View style={styles.timelineContent}>
-                <Text style={styles.timelineTime}>{entry.time}</Text>
-                <Text style={styles.timelineLabel}>{entry.label}</Text>
+          <View style={styles.infoRow}>
+            <View style={styles.infoCard}>
+              <Text style={styles.infoIcon}>◎</Text>
+              <View style={styles.infoTextWrap}>
+                <Text style={styles.infoLabel}>Capacity</Text>
+                <Text style={styles.infoValue}>{item.capacity}</Text>
               </View>
             </View>
-          ))}
-        </Section>
+            <View style={styles.infoCard}>
+              <Text style={styles.infoIcon}>✦</Text>
+              <View style={styles.infoTextWrap}>
+                <Text style={styles.infoLabel}>Décor Style</Text>
+                <Text style={styles.infoValue}>{item.decorType}</Text>
+              </View>
+            </View>
+          </View>
+
+          <View style={styles.roomRow}>
+            <Image
+              source={require('../../elements/i/locationicon.png')}
+              style={styles.roomIcon}
+            />
+            <Text style={styles.roomText}>{item.room}</Text>
+          </View>
+
+          <Section title="Event Concept">
+            <Text style={styles.bodyText}>{item.concept}</Text>
+          </Section>
+
+          <Section title="Decoration & Atmosphere">
+            {item.decoration.map(line => (
+              <View key={line} style={styles.bulletRow}>
+                <View style={styles.bulletDot} />
+                <Text style={styles.bulletText}>{line}</Text>
+              </View>
+            ))}
+          </Section>
+
+          <Section title="Sample Menu">
+            {item.menu.map((course, index) => (
+              <View
+                key={course}
+                style={[
+                  styles.menuRow,
+                  index < item.menu.length - 1 && styles.menuRowBorder,
+                ]}>
+                <Text style={styles.menuIndex}>{index + 1}</Text>
+                <Text style={styles.menuText}>{course}</Text>
+              </View>
+            ))}
+          </Section>
+
+          <Section title="Event Timeline">
+            {item.timeline.map((entry, index) => (
+              <View
+                key={`${entry.time}-${entry.label}`}
+                style={styles.timelineRow}>
+                <View style={styles.timelineRail}>
+                  <View style={styles.timelineDot} />
+                  {index < item.timeline.length - 1 ? (
+                    <View style={styles.timelineLine} />
+                  ) : null}
+                </View>
+                <View style={styles.timelineContent}>
+                  <Text style={styles.timelineTime}>{entry.time}</Text>
+                  <Text style={styles.timelineLabel}>{entry.label}</Text>
+                </View>
+              </View>
+            ))}
+          </Section>
         </View>
       </ScrollView>
-    </View>
+    </Layoutt>
   );
 };
 
@@ -160,7 +163,6 @@ export default EventDetailScrn;
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: '#060C18',
   },
   hero: {
     height: 280,

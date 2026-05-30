@@ -19,6 +19,7 @@ import {
   getTagStyle,
   hasEventsOnDate,
 } from '../data/calendarData';
+import Layoutt from '../components/Layoutt';
 
 const INITIAL_YEAR = 2026;
 const INITIAL_MONTH = 4;
@@ -188,8 +189,9 @@ const CalendarScreen = () => {
   );
 
   return (
-    <View style={styles.screen}>
+    <Layoutt>
       <FlatList
+        scrollEnabled={false}
         data={events}
         keyExtractor={item => item.id}
         ListHeaderComponent={listHeader}
@@ -202,7 +204,7 @@ const CalendarScreen = () => {
         showsVerticalScrollIndicator={false}
         renderItem={({item}) => <EventCard event={item} />}
       />
-    </View>
+    </Layoutt>
   );
 };
 

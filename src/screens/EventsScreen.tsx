@@ -20,6 +20,7 @@ import {
   getFilteredEvents,
 } from '../data/eventsData';
 import {EventsStackParamList} from '../routes/EventsStackNav';
+import Layoutt from '../components/Layoutt';
 
 type EventsNav = StackNavigationProp<EventsStackParamList, 'EventsList'>;
 
@@ -120,8 +121,9 @@ const EventsScreen = () => {
   );
 
   return (
-    <View style={styles.screen}>
+    <Layoutt>
       <FlatList
+        scrollEnabled={false}
         data={items}
         keyExtractor={item => item.id}
         ListHeaderComponent={listHeader}
@@ -137,7 +139,7 @@ const EventsScreen = () => {
           />
         )}
       />
-    </View>
+    </Layoutt>
   );
 };
 

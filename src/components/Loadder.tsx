@@ -14,64 +14,67 @@ import {useNavigation} from '@react-navigation/native';
 import WebView from 'react-native-webview';
 
 const htmlLoader = `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-  }
+    <html>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            overflow: hidden;
+          }
 
-  .loader {
-    display: block;
-    --height-of-loader: 4px;
-    --loader-color:#C9A020;
+          body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
 
-    width: 130px;
-    height: var(--height-of-loader);
-    border-radius: 30px;
-    background-color: rgba(0,0,0,0.2);
-    position: relative;
-  }
+          .loader {
+            display: block;
+            --height-of-loader: 4px;
+            --loader-color:#F0EAD6;
+            width: 130px;
+            height: var(--height-of-loader);
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+          }
 
-  .loader::before {
-    content: "";
-    position: absolute;
-    background: var(--loader-color);
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    border-radius: 30px;
-    animation: moving 1s ease-in-out infinite;
-  }
+          .loader::before {
+            content: "";
+            position: absolute;
+            background: var(--loader-color);
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-radius: 30px;
+            animation: moving 1s ease-in-out infinite;
+          }
 
-  @keyframes moving {
-    50% {
-      width: 100%;
-    }
+          @keyframes moving {
+            50% {
+              width: 100%;
+            }
 
-    100% {
-      width: 0;
-      right: 0;
-      left: unset;
-    }
-  }
-</style>
-</head>
+            100% {
+              width: 0;
+              right: 0;
+              left: unset;
+            }
+          }
+        </style>
+      </head>
 
-<body>
-  <div class="loader"></div>
-</body>
-</html>`;
+      <body>
+        <div class="loader"></div>
+      </body>
+    </html>`;
 
 const Loadder = () => {
   const navigation = useNavigation();
@@ -108,7 +111,7 @@ const Loadder = () => {
               <Text style={styles.subtitle}>Resort & Collection</Text>
             </>
           ) : (
-            <Text style={styles.title}>Resort Guide Mondial</Text>
+            <Text style={styles.title}>Resort Mondial Explorer</Text>
           )}
         </View>
         <View style={styles.bottomWrap}>

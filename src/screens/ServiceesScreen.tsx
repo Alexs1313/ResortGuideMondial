@@ -15,6 +15,7 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {ServiceItem, SERVICES} from '../data/servicesData';
 import Orientation from 'react-native-orientation-locker';
 import {useFocusEffect} from '@react-navigation/native';
+import Layoutt from '../components/Layoutt';
 
 const ServiceIcon = ({size = 22}: {size?: number}) => (
   <View
@@ -249,8 +250,9 @@ const ServiceesScreen = () => {
   );
 
   return (
-    <View style={styles.screen}>
+    <Layoutt>
       <FlatList
+        scrollEnabled={false}
         data={SERVICES}
         keyExtractor={item => item.id}
         ListHeaderComponent={listHeader}
@@ -303,7 +305,7 @@ const ServiceesScreen = () => {
           </Pressable>
         </Pressable>
       </Modal>
-    </View>
+    </Layoutt>
   );
 };
 
