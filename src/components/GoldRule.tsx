@@ -1,6 +1,8 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 
+import {colors} from '../theme/colors';
+
 const GoldRule = () => (
   <View style={styles.goldRule}>
     <View style={styles.goldRuleLine} />
@@ -26,7 +28,7 @@ const styles = StyleSheet.create({
     width: 6,
     height: 6,
     marginHorizontal: 8,
-    backgroundColor: '#C9A020',
+    backgroundColor: colors.accent,
     transform: [{rotate: '45deg'}],
   },
 });

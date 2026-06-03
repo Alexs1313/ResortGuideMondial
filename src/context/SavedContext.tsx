@@ -2,7 +2,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, {
   createContext,
   useCallback,
-  useContext,
   useEffect,
   useMemo,
   useState,
@@ -20,7 +19,7 @@ type SavedContextValue = {
   toggleSave: (id: string) => void;
 };
 
-const SavedContext = createContext<SavedContextValue | null>(null);
+export const SavedContext = createContext<SavedContextValue | null>(null);
 
 export const SavedProvider = ({children}: {children: React.ReactNode}) => {
   const [ready, setReady] = useState(false);
@@ -88,12 +87,4 @@ export const SavedProvider = ({children}: {children: React.ReactNode}) => {
   return (
     <SavedContext.Provider value={value}>{children}</SavedContext.Provider>
   );
-};
-
-export const useSaved = () => {
-  const ctx = useContext(SavedContext);
-  if (!ctx) {
-    throw new Error('useSaved must be used within SavedProvider');
-  }
-  return ctx;
 };

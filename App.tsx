@@ -1,16 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
-import {NavigationContainer} from '@react-navigation/native';
 import {SavedProvider} from './src/context/SavedContext';
-import StackNav from './src/routes/StackNav';
+import {MainApp} from './src/navigation/MainApp';
+import {Intro} from './src/screens/Intro';
+import {Loader} from './src/screens/Loader';
 
 function App(): React.JSX.Element {
+  const [loaderDone, setLoaderDone] = useState(false);
+  const [introDone, setIntroDone] = useState(false);
+
   return (
-    <SavedProvider>
-      <NavigationContainer>
-        <StackNav />
-      </NavigationContainer>
-    </SavedProvider>
+    <SafeAreaProvider>
+      {!loaderDone ? (
+        <Loader onFinish={() => setLoaderDone(true)} />
+      ) : introDone ? (
+        <SavedProvider>
+          <MainApp />
+        </SavedProvider>
+      ) : (
+        <Intro onFinish={() => setIntroDone(true)} />
+      )}
+    </SafeAreaProvider>
   );
 }
 

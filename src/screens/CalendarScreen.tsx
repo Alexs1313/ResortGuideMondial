@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
+import {icons} from '../assets';
 import {
   CALENDAR_TODAY,
   CalendarEvent,
@@ -36,7 +37,7 @@ const EventCard = ({event}: EventCardProps) => {
       <View style={styles.eventTimeCol}>
         <View style={styles.clockCircle}>
           <Image
-            source={require('../../elements/i/clockicon.png')}
+            source={icons.clock}
             style={styles.clockIcon}
           />
         </View>
@@ -60,7 +61,7 @@ const EventCard = ({event}: EventCardProps) => {
         <Text style={styles.eventDescription}>{event.description}</Text>
         <View style={styles.locationRow}>
           <Image
-            source={require('../../elements/i/locationicon.png')}
+            source={icons.location}
             style={styles.locationIcon}
           />
           <Text style={styles.locationText}>{event.location}</Text>
@@ -74,7 +75,7 @@ const CalendarEmpty = () => (
   <View style={styles.emptyWrap}>
     <View style={styles.emptyIconCircle}>
       <Image
-        source={require('../../elements/i/tab_calendar.png')}
+        source={require('../assets/images/tab_calendar.png')}
         style={styles.emptyIcon}
       />
     </View>
@@ -86,7 +87,7 @@ const CalendarEmpty = () => (
   </View>
 );
 
-const CalendarScreen = () => {
+export function CalendarScreen(): React.JSX.Element {
   const insets = useSafeAreaInsets();
   const [viewYear, setViewYear] = useState(INITIAL_YEAR);
   const [viewMonth, setViewMonth] = useState(INITIAL_MONTH);
@@ -204,9 +205,7 @@ const CalendarScreen = () => {
       />
     </View>
   );
-};
-
-export default CalendarScreen;
+}
 
 const styles = StyleSheet.create({
   screen: {

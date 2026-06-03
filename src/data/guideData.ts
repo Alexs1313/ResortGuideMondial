@@ -1,5 +1,8 @@
 import {ImageSourcePropType} from 'react-native';
 
+import {venueImages} from '../assets/venues';
+import type {VenueImageKey} from '../assets/venues';
+
 export type GuideCategory = 'Restaurant' | 'Rooms';
 
 export type GuideItem = {
@@ -14,33 +17,12 @@ export type GuideItem = {
   image: ImageSourcePropType;
 };
 
-const GUIDE_IMAGES = {
-  LeGrandSalon: require('../../elements/i/LeGrandSalon.png'),
-  TheVelvetDiningHall: require('../../elements/i/TheVelvetDiningHall.png'),
-  AuroraBreakfastRoom: require('../../elements/i/AuroraBreakfastRoom.png'),
-  TheSapphireLounge: require('../../elements/i/TheSapphireLounge.png'),
-  MaisonTerrace: require('../../elements/i/MaisonTerrace.png'),
-  TheGrandBanquetRoom: require('../../elements/i/TheGrandBanquetRoom.png'),
-  RoyalSuite: require('../../elements/i/RoyalSuite.png'),
-  DeluxeKingRoom: require('../../elements/i/DeluxeKingRoom.png'),
-  ExecutiveTwinRoom: require('../../elements/i/ExecutiveTwinRoom.png'),
-  PanoramaCornerSuite: require('../../elements/i/PanoramaCornerSuite.png'),
-  ClassicComfortRoom: require('../../elements/i/ClassicComfortRoom.png'),
-  TheCelebrationSuite: require('../../elements/i/TheCelebrationSuite.png'),
-  TheGardenDiningRoom: require('../../elements/i/TheGardenDiningRoom.png'),
-  ThePrivateChefRoom: require('../../elements/i/ThePrivateChefRoom.png'),
-  PremierFamilyRoom: require('../../elements/i/PremierFamilyRoom.png'),
-  MidnightLoungeRoom: require('../../elements/i/MidnightLoungeRoom.png'),
-  TheCasinoAtriumLounge: require('../../elements/i/TheCasinoAtriumLounge.png'),
-} satisfies Record<string, ImageSourcePropType>;
-
-const img = (file: keyof typeof GUIDE_IMAGES): ImageSourcePropType =>
-  GUIDE_IMAGES[file];
+const img = (file: VenueImageKey): ImageSourcePropType => venueImages[file];
 
 export const GUIDE_ITEMS: GuideItem[] = [
   {
-    id: 'le-grand-salon',
-    name: 'Le Grand Salon',
+    id: 'le-salon',
+    name: 'Le Salon',
     tag: 'Restaurant',
     subtitle: 'Signature Fine Dining',
     location: 'Level 1, East Wing',
@@ -53,7 +35,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Award-winning wine cellar',
       'Live piano evenings',
     ],
-    image: img('LeGrandSalon'),
+    image: img('leSalon'),
   },
   {
     id: 'the-velvet-dining-hall',
@@ -71,7 +53,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Soft evening lighting',
       'Suitable for group dining',
     ],
-    image: img('TheVelvetDiningHall'),
+    image: img('velvetDiningHall'),
   },
   {
     id: 'aurora-breakfast-room',
@@ -88,7 +70,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Coffee and tea station',
       'Quiet morning atmosphere',
     ],
-    image: img('AuroraBreakfastRoom'),
+    image: img('auroraBreakfast'),
   },
   {
     id: 'the-sapphire-lounge',
@@ -107,7 +89,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Great for casual meetings',
       'Late-night service',
     ],
-    image: img('TheSapphireLounge'),
+    image: img('sapphireLounge'),
   },
   {
     id: 'maison-terrace',
@@ -125,11 +107,11 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Fresh desserts',
       'Comfortable resort view',
     ],
-    image: img('MaisonTerrace'),
+    image: img('maisonTerrace'),
   },
   {
-    id: 'the-grand-banquet-room',
-    name: 'The Grand Banquet Room',
+    id: 'the-banquet-room',
+    name: 'The Banquet Room',
     tag: 'Restaurant',
     subtitle: 'Private Events',
     location: 'Level 2, Event Wing',
@@ -145,7 +127,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Menu planning options',
       'Photo-ready interior',
     ],
-    image: img('TheGrandBanquetRoom'),
+    image: img('banquetRoom'),
   },
   {
     id: 'royal-suite',
@@ -163,7 +145,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Evening lighting mode',
       'Premium room service access',
     ],
-    image: img('RoyalSuite'),
+    image: img('royalSuite'),
   },
   {
     id: 'deluxe-king-room',
@@ -180,7 +162,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Soft ambient lighting',
       'Room service access',
     ],
-    image: img('DeluxeKingRoom'),
+    image: img('deluxeKing'),
   },
   {
     id: 'executive-twin-room',
@@ -198,7 +180,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Suitable for friends or colleagues',
       'Fast access to elevators',
     ],
-    image: img('ExecutiveTwinRoom'),
+    image: img('executiveTwin'),
   },
   {
     id: 'panorama-corner-suite',
@@ -217,7 +199,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Ideal for longer stays',
       'Quiet private atmosphere',
     ],
-    image: img('PanoramaCornerSuite'),
+    image: img('panoramaSuite'),
   },
   {
     id: 'classic-comfort-room',
@@ -234,7 +216,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Easy restaurant access',
       'Daily housekeeping',
     ],
-    image: img('ClassicComfortRoom'),
+    image: img('classicComfort'),
   },
   {
     id: 'the-celebration-suite',
@@ -253,7 +235,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Best for anniversaries',
       'Private evening atmosphere',
     ],
-    image: img('TheCelebrationSuite'),
+    image: img('celebrationSuite'),
   },
   {
     id: 'the-garden-dining-room',
@@ -271,7 +253,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Family-friendly seating',
       'Great for daytime events',
     ],
-    image: img('TheGardenDiningRoom'),
+    image: img('gardenDining'),
   },
   {
     id: 'the-private-chef-room',
@@ -290,7 +272,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Premium wine pairing',
       'Quiet private setting',
     ],
-    image: img('ThePrivateChefRoom'),
+    image: img('privateChef'),
   },
   {
     id: 'premier-family-room',
@@ -308,7 +290,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Spacious wardrobe',
       'Close to breakfast area',
     ],
-    image: img('PremierFamilyRoom'),
+    image: img('premierFamily'),
   },
   {
     id: 'midnight-lounge-room',
@@ -327,19 +309,19 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Perfect after events',
       'Soft dark interior lighting',
     ],
-    image: img('MidnightLoungeRoom'),
+    image: img('midnightLounge'),
   },
   {
-    id: 'the-casino-atrium-lounge',
-    name: 'The Casino Atrium Lounge',
+    id: 'the-atrium-lounge',
+    name: 'The Atrium Lounge',
     tag: 'Restaurant',
-    subtitle: 'Casino Atrium Lounge',
-    location: 'Level 1, Casino Atrium',
+    subtitle: 'Atrium Lounge',
+    location: 'Level 1, Central Atrium',
     hours: '6:00 PM – 2:00 AM',
     description:
-      'A refined restaurant and lounge zone placed near the casino area, designed for guests who want dinner, drinks, and a lively evening atmosphere without leaving the main resort building. The space combines elegant table seating, a bar-style lounge mood, and soft background music, making it ideal before or after entertainment activities.',
+      'A refined restaurant and lounge at the heart of the resort, designed for guests who want dinner, drinks, and a lively evening atmosphere without leaving the main building. The space combines elegant table seating, a bar-style lounge mood, and soft background music, making it ideal before or after shows and celebrations.',
     highlights: [
-      'Casino-side dining atmosphere',
+      'Central atrium dining atmosphere',
       'Signature cocktails',
       'Light dinner menu',
       'Late-night desserts',
@@ -348,7 +330,7 @@ export const GUIDE_ITEMS: GuideItem[] = [
       'Great for groups and couples',
       'Close to entertainment areas',
     ],
-    image: img('TheCasinoAtriumLounge'),
+    image: img('atriumLounge'),
   },
 ];
 

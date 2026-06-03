@@ -36,7 +36,7 @@ export const CALENDAR_EVENTS: CalendarEvent[] = [
     title: 'Golden Welcome Dinner',
     time: '7:00 PM',
     tag: 'Dining',
-    location: 'Le Grand Salon',
+    location: 'Le Salon',
     description:
       'A refined opening dinner with seasonal European dishes, soft table lighting, and polished service.',
   },
@@ -46,7 +46,7 @@ export const CALENDAR_EVENTS: CalendarEvent[] = [
     title: 'Piano & Dessert Evening',
     time: '9:00 PM',
     tag: 'Music',
-    location: 'Le Grand Salon',
+    location: 'Le Salon',
     description:
       'A calm late-evening experience with live piano, desserts, tea, and coffee pairings.',
   },
@@ -71,14 +71,14 @@ export const CALENDAR_EVENTS: CalendarEvent[] = [
       'A small-group tasting experience with chef-curated dishes and wine pairing suggestions.',
   },
   {
-    id: 'casino-atrium-cocktail-night-2026-05-26',
+    id: 'atrium-cocktail-night-2026-05-26',
     date: '2026-05-26',
-    title: 'Casino Atrium Cocktail Night',
+    title: 'Atrium Cocktail Night',
     time: '8:45 PM',
     tag: 'Lounge',
-    location: 'The Casino Atrium Lounge',
+    location: 'The Atrium Lounge',
     description:
-      'A lively evening with signature cocktails, elegant seating, and a casino-side atmosphere.',
+      'A lively evening with signature cocktails, elegant seating, and a central atrium atmosphere.',
   },
   {
     id: 'late-jazz-table-session-2026-05-26',
@@ -116,7 +116,7 @@ export const CALENDAR_EVENTS: CalendarEvent[] = [
     title: 'VIP Private Dinner Preview',
     time: '9:00 PM',
     tag: 'Private',
-    location: 'The Grand Banquet Room',
+    location: 'The Banquet Room',
     description:
       'A private dinner setup preview for VIP celebrations, corporate dinners, and family gatherings.',
   },
@@ -126,7 +126,7 @@ export const CALENDAR_EVENTS: CalendarEvent[] = [
     title: 'Signature Wine Pairing Dinner',
     time: '7:00 PM',
     tag: 'Gala',
-    location: 'Le Grand Salon',
+    location: 'Le Salon',
     description:
       'A formal multi-course dinner with selected wine pairings and premium evening service.',
   },
@@ -141,19 +141,19 @@ export const CALENDAR_EVENTS: CalendarEvent[] = [
       'A lounge event with Champagne pairings, soft music, and relaxed table service.',
   },
   {
-    id: 'casino-side-evening-bites-2026-05-29',
+    id: 'atrium-evening-bites-2026-05-29',
     date: '2026-05-29',
-    title: 'Casino-Side Evening Bites',
+    title: 'Atrium Evening Bites',
     time: '10:45 PM',
     tag: 'Social',
-    location: 'The Casino Atrium Lounge',
+    location: 'The Atrium Lounge',
     description:
-      'A casual late-evening event with small plates, desserts, drinks, and lively casino-adjacent atmosphere.',
+      'A casual late-evening event with small plates, desserts, drinks, and a lively lounge atmosphere.',
   },
   {
-    id: 'grand-celebration-brunch-2026-05-30',
+    id: 'celebration-brunch-2026-05-30',
     date: '2026-05-30',
-    title: 'Grand Celebration Brunch',
+    title: 'Celebration Brunch',
     time: '11:30 AM',
     tag: 'Brunch',
     location: 'The Velvet Dining Hall',
@@ -176,7 +176,7 @@ export const CALENDAR_EVENTS: CalendarEvent[] = [
     title: 'Diamond Jubilee Gala',
     time: '7:00 PM',
     tag: 'Gala',
-    location: 'The Grand Banquet Room',
+    location: 'The Banquet Room',
     description:
       'A large evening celebration with formal table arrangements, live music, and refined dinner service.',
   },
@@ -236,7 +236,7 @@ export const CALENDAR_EVENTS: CalendarEvent[] = [
     title: 'Corporate Dinner Setup Preview',
     time: '6:00 PM',
     tag: 'Business',
-    location: 'The Grand Banquet Room',
+    location: 'The Banquet Room',
     description:
       'A restaurant event concept showing how the banquet room can be arranged for formal business dinners.',
   },
@@ -261,14 +261,14 @@ export const CALENDAR_EVENTS: CalendarEvent[] = [
       'A classic evening dinner with seasonal chef specials and a refined but comfortable atmosphere.',
   },
   {
-    id: 'casino-atrium-lounge-night-2026-06-03',
+    id: 'atrium-lounge-night-2026-06-03',
     date: '2026-06-03',
-    title: 'Casino Atrium Lounge Night',
+    title: 'Atrium Lounge Night',
     time: '10:00 PM',
     tag: 'Lounge',
-    location: 'The Casino Atrium Lounge',
+    location: 'The Atrium Lounge',
     description:
-      'A lively resort lounge event with cocktails, desserts, and a social atmosphere close to the casino area.',
+      'A lively resort lounge event with cocktails, desserts, and a social atmosphere in the central atrium.',
   },
 ];
 

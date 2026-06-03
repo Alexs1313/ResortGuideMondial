@@ -7,36 +7,106 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0764AF7D905F4EBF8E43470B /* Cinzel-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85BA828E582B4C9CB42E6B32 /* Cinzel-SemiBold.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-ResortGuideMondial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-ResortGuideMondial.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		1DC0314496804CBDB19EA6C6 /* Cinzel-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 344C4E312256468798D5494F /* Cinzel-ExtraBold.ttf */; };
-		244007D08D954B6D9094664A /* Cinzel-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E104465D4514BE8A380CB06 /* Cinzel-Medium.ttf */; };
-		2BC71B2710414320971B4EB1 /* Cinzel-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50301925B5344142BCCE5CBA /* Cinzel-Bold.ttf */; };
-		5F578E26B69E4117B313B1B2 /* Cinzel-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE6ECB0CC8E94266B1975944 /* Cinzel-Black.ttf */; };
-		6B08442D3C0D45DC80FE2838 /* Cinzel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B9C129F58BA43DD855505A1 /* Cinzel-Regular.ttf */; };
+		1472025FB0744B18A9ACFBA9 /* venue_le_salon.png in Resources */ = {isa = PBXBuildFile; fileRef = 76BF420ECA79414DB2C351FB /* venue_le_salon.png */; };
+		184A20384696422592B6DDE8 /* tab_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 04210189DBEB47A3A8B780F9 /* tab_calendar.png */; };
+		18F00E4E7D2C4747B0CC65B8 /* loader_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1513E9F00BCB4BA8ABD52F52 /* loader_bg.png */; };
+		200223735BE1466995EE54A3 /* tab_events.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C9836B46A94C78BA9B991E /* tab_events.png */; };
+		2231D093CDA0414BA0C216FF /* venue_private_chef.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B930AA1ABA4A3789DE71F9 /* venue_private_chef.png */; };
+		2EBAE8578B7B4AE4AA078A73 /* venue_maison_terrace.png in Resources */ = {isa = PBXBuildFile; fileRef = 94A11B3BE8F24A84A153A34D /* venue_maison_terrace.png */; };
+		2F4D1E90E61F4450A991AE98 /* Cinzel-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74E14E20BCA843A7B390FBF6 /* Cinzel-ExtraBold.ttf */; };
+		31F0E789AF014E7995CA10AC /* venue_deluxe_king.png in Resources */ = {isa = PBXBuildFile; fileRef = 896522DFE0F04B12BCD51141 /* venue_deluxe_king.png */; };
+		420998D07B474DB488F391BD /* venue_royal_suite.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2009727F9C491880AB866A /* venue_royal_suite.png */; };
+		4499BABB0F994C08A0D97DED /* venue_banquet_room.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3880FC1D6144EE959FD1B2 /* venue_banquet_room.png */; };
+		481C1C8C0C05416BB02BDB2F /* Cinzel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9188D92401FD46FEB9F1CD76 /* Cinzel-Regular.ttf */; };
+		4D3748AB06C84ACDAD5E000B /* icon_location.png in Resources */ = {isa = PBXBuildFile; fileRef = CE28CE3D192F46FD936224D9 /* icon_location.png */; };
+		54CD8E18075F47A4881B320B /* onboard_hero_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 50B59C6AD3B247EA89981060 /* onboard_hero_2.png */; };
+		62BAF5EE064E444BA67CC1F8 /* venue_sapphire_lounge.png in Resources */ = {isa = PBXBuildFile; fileRef = F068D18A1D4D4D9EBBECA7E9 /* venue_sapphire_lounge.png */; };
+		67D4F29CE94344DFA539191C /* venue_velvet_dining_hall.png in Resources */ = {isa = PBXBuildFile; fileRef = E805DB7A73CD4F69A06C617C /* venue_velvet_dining_hall.png */; };
+		6C83D28F1AE44D17A66B9539 /* tab_services.png in Resources */ = {isa = PBXBuildFile; fileRef = F5CC60EBF14649A584834E9F /* tab_services.png */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		7C471161A84549FE87ABFB0A /* tab_saved.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D18CDBBC67A42A3A9B6E053 /* tab_saved.png */; };
+		7E06BCCEF94F46519FD072D6 /* venue_classic_comfort.png in Resources */ = {isa = PBXBuildFile; fileRef = B8553B0E59AD4BE882D984FE /* venue_classic_comfort.png */; };
+		804A047C8EF84237AEDD31C9 /* loader_logo_android.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B042F2845D4CBB90D93B4C /* loader_logo_android.png */; };
+		80F2C60AD9A741A0BB93990F /* venue_panorama_suite.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9FA2301AB147328DEB6CB1 /* venue_panorama_suite.png */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		90F3653075294CC980F4910E /* venue_garden_dining.png in Resources */ = {isa = PBXBuildFile; fileRef = 342F2D45107946C88C953C0D /* venue_garden_dining.png */; };
+		9B9495958C864898BEC9CD99 /* onboard_hero_3.png in Resources */ = {isa = PBXBuildFile; fileRef = FE9789CB74AC45449E1CE7AB /* onboard_hero_3.png */; };
+		A01BBEF222E340F09035B04D /* icon_saved.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA23755332340D6AC06FB52 /* icon_saved.png */; };
 		A240E5E81EDB7CB3DBCFBC8D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		A9763FEB7E7545919E83AA51 /* Cinzel-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 711721CF988F417994DCE75C /* Cinzel-Medium.ttf */; };
+		AB8D6A6501BC40488513533C /* Cinzel-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9B2974A761C483F9F8C1AD2 /* Cinzel-Bold.ttf */; };
+		B5893F06FC50428D85B1EF09 /* img_empty_saved.png in Resources */ = {isa = PBXBuildFile; fileRef = 873B7567768848C9BED9B97F /* img_empty_saved.png */; };
+		B5C560F56BE44DBD86B77A98 /* venue_midnight_lounge.png in Resources */ = {isa = PBXBuildFile; fileRef = 5955EB772D504D1C8408C9C2 /* venue_midnight_lounge.png */; };
+		B7BDACA489F246CCBCD5442D /* icon_clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 145FBA47DF28488EAA49D657 /* icon_clock.png */; };
+		BDE1EEF1FBD24C8AA4543B49 /* venue_celebration_suite.png in Resources */ = {isa = PBXBuildFile; fileRef = 002FD36F03C047C19361A318 /* venue_celebration_suite.png */; };
+		C1AD8CE841FE41BFBD9584E9 /* venue_premier_family.png in Resources */ = {isa = PBXBuildFile; fileRef = F663E0E90F7443058DB73D38 /* venue_premier_family.png */; };
+		C2CA137260DE4074BA4D7648 /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = E52DFD10232C4EAF979A66A3 /* icon_back.png */; };
+		C6034F3361554DC59070705E /* venue_atrium_lounge.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4DE93D91644BC78DCBC8F1 /* venue_atrium_lounge.png */; };
+		C79EAFEFA65E4D7EB8647B58 /* icon_saved_active.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E7163573854A4498320457 /* icon_saved_active.png */; };
+		D49655D17FCC4A1B9D9E0122 /* onboard_hero_1.png in Resources */ = {isa = PBXBuildFile; fileRef = DB6FC3FD53364D7799B49EED /* onboard_hero_1.png */; };
+		D595124BE63C415E8F779A2B /* venue_executive_twin.png in Resources */ = {isa = PBXBuildFile; fileRef = CF986435F5D9449582AF602B /* venue_executive_twin.png */; };
+		DB910E00B6624317AF630DA6 /* loader_logo_ios.png in Resources */ = {isa = PBXBuildFile; fileRef = D40C4DA3EBED4433AD8C33A1 /* loader_logo_ios.png */; };
+		E6BEE48513E246278BC89AF5 /* Cinzel-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27450054A57E45F2B32BB2E6 /* Cinzel-SemiBold.ttf */; };
+		E801E2AABFCF4784877CE33C /* icon_search.png in Resources */ = {isa = PBXBuildFile; fileRef = 386A5555AFB3465B887EC08C /* icon_search.png */; };
+		EE84FED5E0E44D8F810B4A66 /* Cinzel-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20A58DA5119F4BF2A053CC3E /* Cinzel-Black.ttf */; };
+		F06E566AF112453F9111EBEE /* tab_guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F254CD0B4494626A4302896 /* tab_guide.png */; };
+		F9896DE91861448FB2BF0E5B /* venue_aurora_breakfast.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F83EAF1C09740689BBEDF58 /* venue_aurora_breakfast.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002FD36F03C047C19361A318 /* venue_celebration_suite.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_celebration_suite.png; path = ../src/assets/images/venue_celebration_suite.png; sourceTree = "<group>"; };
+		04210189DBEB47A3A8B780F9 /* tab_calendar.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = tab_calendar.png; path = ../src/assets/images/tab_calendar.png; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ResortGuideMondial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResortGuideMondial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ResortGuideMondial/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ResortGuideMondial/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ResortGuideMondial/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		344C4E312256468798D5494F /* Cinzel-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-ExtraBold.ttf"; path = "../elements/f/Cinzel-ExtraBold.ttf"; sourceTree = "<group>"; };
+		145FBA47DF28488EAA49D657 /* icon_clock.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icon_clock.png; path = ../src/assets/images/icon_clock.png; sourceTree = "<group>"; };
+		1513E9F00BCB4BA8ABD52F52 /* loader_bg.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = loader_bg.png; path = ../src/assets/images/loader_bg.png; sourceTree = "<group>"; };
+		20A58DA5119F4BF2A053CC3E /* Cinzel-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Black.ttf"; path = "../src/assets/fonts/Cinzel-Black.ttf"; sourceTree = "<group>"; };
+		27450054A57E45F2B32BB2E6 /* Cinzel-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-SemiBold.ttf"; path = "../src/assets/fonts/Cinzel-SemiBold.ttf"; sourceTree = "<group>"; };
+		342F2D45107946C88C953C0D /* venue_garden_dining.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_garden_dining.png; path = ../src/assets/images/venue_garden_dining.png; sourceTree = "<group>"; };
+		34C9836B46A94C78BA9B991E /* tab_events.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = tab_events.png; path = ../src/assets/images/tab_events.png; sourceTree = "<group>"; };
+		386A5555AFB3465B887EC08C /* icon_search.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icon_search.png; path = ../src/assets/images/icon_search.png; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-ResortGuideMondial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResortGuideMondial.debug.xcconfig"; path = "Target Support Files/Pods-ResortGuideMondial/Pods-ResortGuideMondial.debug.xcconfig"; sourceTree = "<group>"; };
-		4E104465D4514BE8A380CB06 /* Cinzel-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Medium.ttf"; path = "../elements/f/Cinzel-Medium.ttf"; sourceTree = "<group>"; };
-		50301925B5344142BCCE5CBA /* Cinzel-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Bold.ttf"; path = "../elements/f/Cinzel-Bold.ttf"; sourceTree = "<group>"; };
+		4FA23755332340D6AC06FB52 /* icon_saved.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icon_saved.png; path = ../src/assets/images/icon_saved.png; sourceTree = "<group>"; };
+		50B59C6AD3B247EA89981060 /* onboard_hero_2.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = onboard_hero_2.png; path = ../src/assets/images/onboard_hero_2.png; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-ResortGuideMondial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResortGuideMondial.release.xcconfig"; path = "Target Support Files/Pods-ResortGuideMondial/Pods-ResortGuideMondial.release.xcconfig"; sourceTree = "<group>"; };
-		5B9C129F58BA43DD855505A1 /* Cinzel-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Regular.ttf"; path = "../elements/f/Cinzel-Regular.ttf"; sourceTree = "<group>"; };
+		5955EB772D504D1C8408C9C2 /* venue_midnight_lounge.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_midnight_lounge.png; path = ../src/assets/images/venue_midnight_lounge.png; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-ResortGuideMondial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ResortGuideMondial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F254CD0B4494626A4302896 /* tab_guide.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = tab_guide.png; path = ../src/assets/images/tab_guide.png; sourceTree = "<group>"; };
+		711721CF988F417994DCE75C /* Cinzel-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Medium.ttf"; path = "../src/assets/fonts/Cinzel-Medium.ttf"; sourceTree = "<group>"; };
+		74E14E20BCA843A7B390FBF6 /* Cinzel-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-ExtraBold.ttf"; path = "../src/assets/fonts/Cinzel-ExtraBold.ttf"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ResortGuideMondial/AppDelegate.swift; sourceTree = "<group>"; };
+		76B042F2845D4CBB90D93B4C /* loader_logo_android.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = loader_logo_android.png; path = ../src/assets/images/loader_logo_android.png; sourceTree = "<group>"; };
+		76BF420ECA79414DB2C351FB /* venue_le_salon.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_le_salon.png; path = ../src/assets/images/venue_le_salon.png; sourceTree = "<group>"; };
+		7A9FA2301AB147328DEB6CB1 /* venue_panorama_suite.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_panorama_suite.png; path = ../src/assets/images/venue_panorama_suite.png; sourceTree = "<group>"; };
+		7F83EAF1C09740689BBEDF58 /* venue_aurora_breakfast.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_aurora_breakfast.png; path = ../src/assets/images/venue_aurora_breakfast.png; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ResortGuideMondial/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		85BA828E582B4C9CB42E6B32 /* Cinzel-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-SemiBold.ttf"; path = "../elements/f/Cinzel-SemiBold.ttf"; sourceTree = "<group>"; };
-		AE6ECB0CC8E94266B1975944 /* Cinzel-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Black.ttf"; path = "../elements/f/Cinzel-Black.ttf"; sourceTree = "<group>"; };
+		873B7567768848C9BED9B97F /* img_empty_saved.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = img_empty_saved.png; path = ../src/assets/images/img_empty_saved.png; sourceTree = "<group>"; };
+		896522DFE0F04B12BCD51141 /* venue_deluxe_king.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_deluxe_king.png; path = ../src/assets/images/venue_deluxe_king.png; sourceTree = "<group>"; };
+		9188D92401FD46FEB9F1CD76 /* Cinzel-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Regular.ttf"; path = "../src/assets/fonts/Cinzel-Regular.ttf"; sourceTree = "<group>"; };
+		94A11B3BE8F24A84A153A34D /* venue_maison_terrace.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_maison_terrace.png; path = ../src/assets/images/venue_maison_terrace.png; sourceTree = "<group>"; };
+		95B930AA1ABA4A3789DE71F9 /* venue_private_chef.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_private_chef.png; path = ../src/assets/images/venue_private_chef.png; sourceTree = "<group>"; };
+		9D18CDBBC67A42A3A9B6E053 /* tab_saved.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = tab_saved.png; path = ../src/assets/images/tab_saved.png; sourceTree = "<group>"; };
+		AC3880FC1D6144EE959FD1B2 /* venue_banquet_room.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_banquet_room.png; path = ../src/assets/images/venue_banquet_room.png; sourceTree = "<group>"; };
+		B8553B0E59AD4BE882D984FE /* venue_classic_comfort.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_classic_comfort.png; path = ../src/assets/images/venue_classic_comfort.png; sourceTree = "<group>"; };
+		CE2009727F9C491880AB866A /* venue_royal_suite.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_royal_suite.png; path = ../src/assets/images/venue_royal_suite.png; sourceTree = "<group>"; };
+		CE28CE3D192F46FD936224D9 /* icon_location.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icon_location.png; path = ../src/assets/images/icon_location.png; sourceTree = "<group>"; };
+		CF986435F5D9449582AF602B /* venue_executive_twin.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_executive_twin.png; path = ../src/assets/images/venue_executive_twin.png; sourceTree = "<group>"; };
+		D40C4DA3EBED4433AD8C33A1 /* loader_logo_ios.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = loader_logo_ios.png; path = ../src/assets/images/loader_logo_ios.png; sourceTree = "<group>"; };
+		D5E7163573854A4498320457 /* icon_saved_active.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icon_saved_active.png; path = ../src/assets/images/icon_saved_active.png; sourceTree = "<group>"; };
+		DB6FC3FD53364D7799B49EED /* onboard_hero_1.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = onboard_hero_1.png; path = ../src/assets/images/onboard_hero_1.png; sourceTree = "<group>"; };
+		E52DFD10232C4EAF979A66A3 /* icon_back.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icon_back.png; path = ../src/assets/images/icon_back.png; sourceTree = "<group>"; };
+		E805DB7A73CD4F69A06C617C /* venue_velvet_dining_hall.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_velvet_dining_hall.png; path = ../src/assets/images/venue_velvet_dining_hall.png; sourceTree = "<group>"; };
+		EA4DE93D91644BC78DCBC8F1 /* venue_atrium_lounge.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_atrium_lounge.png; path = ../src/assets/images/venue_atrium_lounge.png; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F068D18A1D4D4D9EBBECA7E9 /* venue_sapphire_lounge.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_sapphire_lounge.png; path = ../src/assets/images/venue_sapphire_lounge.png; sourceTree = "<group>"; };
+		F5CC60EBF14649A584834E9F /* tab_services.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = tab_services.png; path = ../src/assets/images/tab_services.png; sourceTree = "<group>"; };
+		F663E0E90F7443058DB73D38 /* venue_premier_family.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = venue_premier_family.png; path = ../src/assets/images/venue_premier_family.png; sourceTree = "<group>"; };
+		F9B2974A761C483F9F8C1AD2 /* Cinzel-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Bold.ttf"; path = "../src/assets/fonts/Cinzel-Bold.ttf"; sourceTree = "<group>"; };
+		FE9789CB74AC45449E1CE7AB /* onboard_hero_3.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = onboard_hero_3.png; path = ../src/assets/images/onboard_hero_3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +136,47 @@
 		281742B364544BC99AE76FEB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AE6ECB0CC8E94266B1975944 /* Cinzel-Black.ttf */,
-				50301925B5344142BCCE5CBA /* Cinzel-Bold.ttf */,
-				85BA828E582B4C9CB42E6B32 /* Cinzel-SemiBold.ttf */,
-				4E104465D4514BE8A380CB06 /* Cinzel-Medium.ttf */,
-				5B9C129F58BA43DD855505A1 /* Cinzel-Regular.ttf */,
-				344C4E312256468798D5494F /* Cinzel-ExtraBold.ttf */,
+				20A58DA5119F4BF2A053CC3E /* Cinzel-Black.ttf */,
+				F9B2974A761C483F9F8C1AD2 /* Cinzel-Bold.ttf */,
+				27450054A57E45F2B32BB2E6 /* Cinzel-SemiBold.ttf */,
+				711721CF988F417994DCE75C /* Cinzel-Medium.ttf */,
+				9188D92401FD46FEB9F1CD76 /* Cinzel-Regular.ttf */,
+				74E14E20BCA843A7B390FBF6 /* Cinzel-ExtraBold.ttf */,
+				002FD36F03C047C19361A318 /* venue_celebration_suite.png */,
+				76BF420ECA79414DB2C351FB /* venue_le_salon.png */,
+				04210189DBEB47A3A8B780F9 /* tab_calendar.png */,
+				896522DFE0F04B12BCD51141 /* venue_deluxe_king.png */,
+				CE2009727F9C491880AB866A /* venue_royal_suite.png */,
+				E52DFD10232C4EAF979A66A3 /* icon_back.png */,
+				34C9836B46A94C78BA9B991E /* tab_events.png */,
+				873B7567768848C9BED9B97F /* img_empty_saved.png */,
+				386A5555AFB3465B887EC08C /* icon_search.png */,
+				F663E0E90F7443058DB73D38 /* venue_premier_family.png */,
+				145FBA47DF28488EAA49D657 /* icon_clock.png */,
+				94A11B3BE8F24A84A153A34D /* venue_maison_terrace.png */,
+				AC3880FC1D6144EE959FD1B2 /* venue_banquet_room.png */,
+				E805DB7A73CD4F69A06C617C /* venue_velvet_dining_hall.png */,
+				B8553B0E59AD4BE882D984FE /* venue_classic_comfort.png */,
+				7A9FA2301AB147328DEB6CB1 /* venue_panorama_suite.png */,
+				95B930AA1ABA4A3789DE71F9 /* venue_private_chef.png */,
+				4FA23755332340D6AC06FB52 /* icon_saved.png */,
+				CE28CE3D192F46FD936224D9 /* icon_location.png */,
+				5F254CD0B4494626A4302896 /* tab_guide.png */,
+				D5E7163573854A4498320457 /* icon_saved_active.png */,
+				7F83EAF1C09740689BBEDF58 /* venue_aurora_breakfast.png */,
+				76B042F2845D4CBB90D93B4C /* loader_logo_android.png */,
+				EA4DE93D91644BC78DCBC8F1 /* venue_atrium_lounge.png */,
+				50B59C6AD3B247EA89981060 /* onboard_hero_2.png */,
+				F5CC60EBF14649A584834E9F /* tab_services.png */,
+				5955EB772D504D1C8408C9C2 /* venue_midnight_lounge.png */,
+				D40C4DA3EBED4433AD8C33A1 /* loader_logo_ios.png */,
+				FE9789CB74AC45449E1CE7AB /* onboard_hero_3.png */,
+				DB6FC3FD53364D7799B49EED /* onboard_hero_1.png */,
+				1513E9F00BCB4BA8ABD52F52 /* loader_bg.png */,
+				9D18CDBBC67A42A3A9B6E053 /* tab_saved.png */,
+				F068D18A1D4D4D9EBBECA7E9 /* venue_sapphire_lounge.png */,
+				CF986435F5D9449582AF602B /* venue_executive_twin.png */,
+				342F2D45107946C88C953C0D /* venue_garden_dining.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -187,12 +292,47 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				A240E5E81EDB7CB3DBCFBC8D /* PrivacyInfo.xcprivacy in Resources */,
-				5F578E26B69E4117B313B1B2 /* Cinzel-Black.ttf in Resources */,
-				2BC71B2710414320971B4EB1 /* Cinzel-Bold.ttf in Resources */,
-				0764AF7D905F4EBF8E43470B /* Cinzel-SemiBold.ttf in Resources */,
-				244007D08D954B6D9094664A /* Cinzel-Medium.ttf in Resources */,
-				6B08442D3C0D45DC80FE2838 /* Cinzel-Regular.ttf in Resources */,
-				1DC0314496804CBDB19EA6C6 /* Cinzel-ExtraBold.ttf in Resources */,
+				EE84FED5E0E44D8F810B4A66 /* Cinzel-Black.ttf in Resources */,
+				AB8D6A6501BC40488513533C /* Cinzel-Bold.ttf in Resources */,
+				E6BEE48513E246278BC89AF5 /* Cinzel-SemiBold.ttf in Resources */,
+				A9763FEB7E7545919E83AA51 /* Cinzel-Medium.ttf in Resources */,
+				481C1C8C0C05416BB02BDB2F /* Cinzel-Regular.ttf in Resources */,
+				2F4D1E90E61F4450A991AE98 /* Cinzel-ExtraBold.ttf in Resources */,
+				BDE1EEF1FBD24C8AA4543B49 /* venue_celebration_suite.png in Resources */,
+				1472025FB0744B18A9ACFBA9 /* venue_le_salon.png in Resources */,
+				184A20384696422592B6DDE8 /* tab_calendar.png in Resources */,
+				31F0E789AF014E7995CA10AC /* venue_deluxe_king.png in Resources */,
+				420998D07B474DB488F391BD /* venue_royal_suite.png in Resources */,
+				C2CA137260DE4074BA4D7648 /* icon_back.png in Resources */,
+				200223735BE1466995EE54A3 /* tab_events.png in Resources */,
+				B5893F06FC50428D85B1EF09 /* img_empty_saved.png in Resources */,
+				E801E2AABFCF4784877CE33C /* icon_search.png in Resources */,
+				C1AD8CE841FE41BFBD9584E9 /* venue_premier_family.png in Resources */,
+				B7BDACA489F246CCBCD5442D /* icon_clock.png in Resources */,
+				2EBAE8578B7B4AE4AA078A73 /* venue_maison_terrace.png in Resources */,
+				4499BABB0F994C08A0D97DED /* venue_banquet_room.png in Resources */,
+				67D4F29CE94344DFA539191C /* venue_velvet_dining_hall.png in Resources */,
+				7E06BCCEF94F46519FD072D6 /* venue_classic_comfort.png in Resources */,
+				80F2C60AD9A741A0BB93990F /* venue_panorama_suite.png in Resources */,
+				2231D093CDA0414BA0C216FF /* venue_private_chef.png in Resources */,
+				A01BBEF222E340F09035B04D /* icon_saved.png in Resources */,
+				4D3748AB06C84ACDAD5E000B /* icon_location.png in Resources */,
+				F06E566AF112453F9111EBEE /* tab_guide.png in Resources */,
+				C79EAFEFA65E4D7EB8647B58 /* icon_saved_active.png in Resources */,
+				F9896DE91861448FB2BF0E5B /* venue_aurora_breakfast.png in Resources */,
+				804A047C8EF84237AEDD31C9 /* loader_logo_android.png in Resources */,
+				C6034F3361554DC59070705E /* venue_atrium_lounge.png in Resources */,
+				54CD8E18075F47A4881B320B /* onboard_hero_2.png in Resources */,
+				6C83D28F1AE44D17A66B9539 /* tab_services.png in Resources */,
+				B5C560F56BE44DBD86B77A98 /* venue_midnight_lounge.png in Resources */,
+				DB910E00B6624317AF630DA6 /* loader_logo_ios.png in Resources */,
+				9B9495958C864898BEC9CD99 /* onboard_hero_3.png in Resources */,
+				D49655D17FCC4A1B9D9E0122 /* onboard_hero_1.png in Resources */,
+				18F00E4E7D2C4747B0CC65B8 /* loader_bg.png in Resources */,
+				7C471161A84549FE87ABFB0A /* tab_saved.png in Resources */,
+				62BAF5EE064E444BA67CC1F8 /* venue_sapphire_lounge.png in Resources */,
+				D595124BE63C415E8F779A2B /* venue_executive_twin.png in Resources */,
+				90F3653075294CC980F4910E /* venue_garden_dining.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +453,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dfjkjksdflk.sjkrklm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dfkjn.dfnjsdfkln;
 				PRODUCT_NAME = ResortGuideMondial;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -345,7 +485,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dfjkjksdflk.sjkrklm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dfkjn.dfnjsdfkln;
 				PRODUCT_NAME = ResortGuideMondial;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

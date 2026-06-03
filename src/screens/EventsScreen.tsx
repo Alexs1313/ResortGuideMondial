@@ -1,5 +1,3 @@
-import {useNavigation} from '@react-navigation/native';
-import {StackNavigationProp} from '@react-navigation/stack';
 import React, {useMemo, useState} from 'react';
 import {
   FlatList,
@@ -19,9 +17,7 @@ import {
   getEventHighlights,
   getFilteredEvents,
 } from '../data/eventsData';
-import {EventsStackParamList} from '../routes/EventsStackNav';
-
-type EventsNav = StackNavigationProp<EventsStackParamList, 'EventsList'>;
+import {colors} from '../theme/colors';
 
 const FILTERS: {key: EventFilter; label: string}[] = [
   {key: 'All', label: 'All'},
@@ -80,8 +76,11 @@ const EventCard = ({item, onPress}: EventCardProps) => {
   );
 };
 
-const EventsScreen = () => {
-  const navigation = useNavigation<EventsNav>();
+type EventsScreenProps = {
+  onOpenEvent: (item: EventItem) => void;
+};
+
+export function EventsScreen({onOpenEvent}: EventsScreenProps) {
   const insets = useSafeAreaInsets();
   const [filter, setFilter] = useState<EventFilter>('All');
 
@@ -133,7 +132,7 @@ const EventsScreen = () => {
         renderItem={({item}) => (
           <EventCard
             item={item}
-            onPress={() => navigation.navigate('EventDetail', {item})}
+            onPress={() => onOpenEvent(item)}
           />
         )}
       />
@@ -141,12 +140,10 @@ const EventsScreen = () => {
   );
 };
 
-export default EventsScreen;
-
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: '#060C18',
+    backgroundColor: colors.bg,
   },
   header: {
     paddingTop: 12,
