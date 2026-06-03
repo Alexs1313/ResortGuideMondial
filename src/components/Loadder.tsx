@@ -104,7 +104,7 @@ const Loadder = () => {
           )}
           {Platform.OS === 'ios' ? (
             <>
-              <Text style={styles.title}>Mondial Casino</Text>
+              <Text style={styles.title}>Resort Mondial Guide</Text>
               <Text style={styles.subtitle}>Resort & Collection</Text>
             </>
           ) : (
