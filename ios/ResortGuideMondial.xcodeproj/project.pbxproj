@@ -453,7 +453,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dfkjn.dfnjsdfkln;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdkjjkadfjk.dkjfjk;
 				PRODUCT_NAME = ResortGuideMondial;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -485,7 +485,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dfkjn.dfnjsdfkln;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdkjjkadfjk.dkjfjk;
 				PRODUCT_NAME = ResortGuideMondial;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

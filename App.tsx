@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-
-import {SavedProvider} from './src/context/SavedContext';
-import {MainApp} from './src/navigation/MainApp';
-import {Intro} from './src/screens/Intro';
-import {Loader} from './src/screens/Loader';
+import {ResortGuidSavedProvider} from './src/resortGuidCtx/ResortGuidSavedContext';
+import {ResortGuidMainApp} from './src/resortGuidNav/ResortGuidMainApp';
+import {ResortGuidIntroScreen} from './src/resortGuidScrn/ResortGuidIntroScreen';
+import {ResortGuidLoaderScreen} from './src/resortGuidScrn/ResortGuidLoaderScreen';
 
 function App(): React.JSX.Element {
   const [loaderDone, setLoaderDone] = useState(false);
@@ -13,13 +12,13 @@ function App(): React.JSX.Element {
   return (
     <SafeAreaProvider>
       {!loaderDone ? (
-        <Loader onFinish={() => setLoaderDone(true)} />
+        <ResortGuidLoaderScreen onFinish={() => setLoaderDone(true)} />
       ) : introDone ? (
-        <SavedProvider>
-          <MainApp />
-        </SavedProvider>
+        <ResortGuidSavedProvider>
+          <ResortGuidMainApp />
+        </ResortGuidSavedProvider>
       ) : (
-        <Intro onFinish={() => setIntroDone(true)} />
+        <ResortGuidIntroScreen onFinish={() => setIntroDone(true)} />
       )}
     </SafeAreaProvider>
   );
