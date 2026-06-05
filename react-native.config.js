@@ -1,3 +1,6 @@
 module.exports = {
-  assets: ['./src/resortGuidAssts/fonts/', './src/resortGuidAssts/images/'],
+  assets: [
+    './ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialTypefaces/',
+    './ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/',
+  ],
 };

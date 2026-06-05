@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {ResortGuidSavedProvider} from './src/resortGuidCtx/ResortGuidSavedContext';
-import {ResortGuidMainApp} from './src/resortGuidNav/ResortGuidMainApp';
-import {ResortGuidIntroScreen} from './src/resortGuidScrn/ResortGuidIntroScreen';
-import {ResortGuidLoaderScreen} from './src/resortGuidScrn/ResortGuidLoaderScreen';
+import {ResortGuideMondialSavedProvider} from './ResortGuideMondial/ResortGuideMondialEssenceVessel/ResortGuideMondialSavedContext';
+import {ResortGuideMondialIntroScreen} from './ResortGuideMondial/ResortGuideMondialPanorama/ResortGuideMondialVestibulePane/ResortGuideMondialIntroScreen';
+import {ResortGuideMondialLoaderScreen} from './ResortGuideMondial/ResortGuideMondialPanorama/ResortGuideMondialThresholdPane/ResortGuideMondialLoaderScreen';
+import {ResortGuideMondialRouterino} from './ResortGuideMondial/ResortGuideMondialRouterino/ResortGuideMondialRouterino';
 
 function App(): React.JSX.Element {
   const [loaderDone, setLoaderDone] = useState(false);
@@ -12,13 +12,13 @@ function App(): React.JSX.Element {
   return (
     <SafeAreaProvider>
       {!loaderDone ? (
-        <ResortGuidLoaderScreen onFinish={() => setLoaderDone(true)} />
+        <ResortGuideMondialLoaderScreen onFinish={() => setLoaderDone(true)} />
       ) : introDone ? (
-        <ResortGuidSavedProvider>
-          <ResortGuidMainApp />
-        </ResortGuidSavedProvider>
+        <ResortGuideMondialSavedProvider>
+          <ResortGuideMondialRouterino />
+        </ResortGuideMondialSavedProvider>
       ) : (
-        <ResortGuidIntroScreen onFinish={() => setIntroDone(true)} />
+        <ResortGuideMondialIntroScreen onFinish={() => setIntroDone(true)} />
       )}
     </SafeAreaProvider>
   );

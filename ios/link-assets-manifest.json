@@ -2,168 +2,168 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "src/resortGuidAssts/fonts/Cinzel-Black.ttf",
-      "sha1": "38ac576cc25bdb4aeba45ec9f79e6cfc9d5cb754"
-    },
-    {
-      "path": "src/resortGuidAssts/fonts/Cinzel-Bold.ttf",
-      "sha1": "b88b6bb7c15bc9c8b1a049f40b6c716a5d3c0672"
-    },
-    {
-      "path": "src/resortGuidAssts/fonts/Cinzel-ExtraBold.ttf",
-      "sha1": "dec4bbb4c34f8c308cbc6863938169e55dd2ec5f"
-    },
-    {
-      "path": "src/resortGuidAssts/fonts/Cinzel-Medium.ttf",
-      "sha1": "461f559b5df84aa8cabca9fbea702275c00cdce8"
-    },
-    {
-      "path": "src/resortGuidAssts/fonts/Cinzel-Regular.ttf",
-      "sha1": "e69b593cf3181656bb3634477f0ceb0089846645"
-    },
-    {
-      "path": "src/resortGuidAssts/fonts/Cinzel-SemiBold.ttf",
-      "sha1": "4b4d4822a26728e680a5f0ea9a8957ca2d5c84d2"
-    },
-    {
-      "path": "src/resortGuidAssts/images/icon_back.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_icon_back.png",
       "sha1": "ed62dd9f9abf0853243fc8a3662045f7c7f278b8"
     },
     {
-      "path": "src/resortGuidAssts/images/icon_clock.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_icon_clock.png",
       "sha1": "f14914bf5ddcf3109c86012544bee8d27c9f95e6"
     },
     {
-      "path": "src/resortGuidAssts/images/icon_location.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_icon_location.png",
       "sha1": "d8a0048466d93ff273154d51a4a0ef46357893ab"
     },
     {
-      "path": "src/resortGuidAssts/images/icon_saved_active.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_icon_saved_active.png",
       "sha1": "9e6e40ea5634fde90d9db8b0591c5143b0a3e69c"
     },
     {
-      "path": "src/resortGuidAssts/images/icon_saved.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_icon_saved.png",
       "sha1": "97f48b1a4aaf9da2be7ede27ead35baddd98d150"
     },
     {
-      "path": "src/resortGuidAssts/images/icon_search.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_icon_search.png",
       "sha1": "c815edd8ca85542ec14092b61ff5d4d7bd28b26b"
     },
     {
-      "path": "src/resortGuidAssts/images/img_empty_saved.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_img_empty_saved.png",
       "sha1": "d229410057f2f116ac0662d8def7283ccb2b7ec0"
     },
     {
-      "path": "src/resortGuidAssts/images/loader_bg.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_loader_bg.png",
       "sha1": "fd05c9a253781065624835008ad9674b9f56e75f"
     },
     {
-      "path": "src/resortGuidAssts/images/loader_logo_android.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_loader_logo_android.png",
       "sha1": "8af7333f000d4ee67658dbd04bacecfae2002ec1"
     },
     {
-      "path": "src/resortGuidAssts/images/loader_logo_ios.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_loader_logo_ios.png",
       "sha1": "ef5cf0fc02f1375c2390aa7aff484c9599a8c215"
     },
     {
-      "path": "src/resortGuidAssts/images/onboard_hero_1.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_onboard_hero_1.png",
       "sha1": "6b49093c831509cf6f3c23bd3490524075283db9"
     },
     {
-      "path": "src/resortGuidAssts/images/onboard_hero_2.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_onboard_hero_2.png",
       "sha1": "fe98962a0c14f9b3ea4bfb5c6973060fa34aafed"
     },
     {
-      "path": "src/resortGuidAssts/images/onboard_hero_3.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_onboard_hero_3.png",
       "sha1": "afcb5cfdef03cea9ad2c0badf05c155753e8420d"
     },
     {
-      "path": "src/resortGuidAssts/images/tab_calendar.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_tab_calendar.png",
       "sha1": "42961fe2d4c4231587b15d9708dcff511e3ecf20"
     },
     {
-      "path": "src/resortGuidAssts/images/tab_events.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_tab_events.png",
       "sha1": "769ba6fc64dbe1ce228d57c5084a9ed165be0e50"
     },
     {
-      "path": "src/resortGuidAssts/images/tab_guide.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_tab_guide.png",
       "sha1": "762c4403bd44110192419d7b58bf7b71538aa0af"
     },
     {
-      "path": "src/resortGuidAssts/images/tab_saved.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_tab_saved.png",
       "sha1": "41ed0fea265fd4fa8beb59a95206305c1f1d9a2a"
     },
     {
-      "path": "src/resortGuidAssts/images/tab_services.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_tab_services.png",
       "sha1": "e46a44d34426ca3fd0c47e28bd438c5bd0538683"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_atrium_lounge.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_atrium_lounge.png",
       "sha1": "690ad8b67f30fdff874a9b5b0f7e785b6e5d5f59"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_aurora_breakfast.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_aurora_breakfast.png",
       "sha1": "0dc02caf8e88d54359242af576112a2c2752abe2"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_banquet_room.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_banquet_room.png",
       "sha1": "38e06ef14a009c26f9abbcaf17a6cb641fc81565"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_celebration_suite.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_celebration_suite.png",
       "sha1": "58ac914cc7adf30d21316564cc0a4e6eb208eb52"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_classic_comfort.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_classic_comfort.png",
       "sha1": "b9cec103abb2eb0944f9438bc3c10e68011e0007"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_deluxe_king.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_deluxe_king.png",
       "sha1": "b6f2ba1382c44ce8aa2618d3e1774d9267bc79e8"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_executive_twin.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_executive_twin.png",
       "sha1": "be6c127d83a0f9471a029dc240b43baced512b46"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_garden_dining.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_garden_dining.png",
       "sha1": "84335deaaad8e981ba5a54a80d066f29dc637026"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_le_salon.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_le_salon.png",
       "sha1": "73d85e83e52adff64b008a99c9bc5a68a6c0eea5"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_maison_terrace.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_maison_terrace.png",
       "sha1": "c599152cfd52048ed23818c3d86f1f20c5e338a1"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_midnight_lounge.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_midnight_lounge.png",
       "sha1": "605de8c43ea948477577bb9debd195955afac0cc"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_panorama_suite.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_panorama_suite.png",
       "sha1": "0658e28c5581e968959d45db58536a42bcb477ce"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_premier_family.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_premier_family.png",
       "sha1": "c0696445cb43c568ae4bae0dc099c87ac10decd8"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_private_chef.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_private_chef.png",
       "sha1": "3b3bacb468b0d81a7cb58fe0cd42b8ebc67022a7"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_royal_suite.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_royal_suite.png",
       "sha1": "f6911b052aa7f546bacee016dd655da4b3a56ff1"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_sapphire_lounge.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_sapphire_lounge.png",
       "sha1": "13162a07bf727c9b182360d9395aa8578a9efb01"
     },
     {
-      "path": "src/resortGuidAssts/images/venue_velvet_dining_hall.png",
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialImagery/resort_guide_mondial_venue_velvet_dining_hall.png",
       "sha1": "c84f2a381197463458e587357c4c3ae50231172e"
+    },
+    {
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialTypefaces/Cinzel-Black.ttf",
+      "sha1": "38ac576cc25bdb4aeba45ec9f79e6cfc9d5cb754"
+    },
+    {
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialTypefaces/Cinzel-Bold.ttf",
+      "sha1": "b88b6bb7c15bc9c8b1a049f40b6c716a5d3c0672"
+    },
+    {
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialTypefaces/Cinzel-ExtraBold.ttf",
+      "sha1": "dec4bbb4c34f8c308cbc6863938169e55dd2ec5f"
+    },
+    {
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialTypefaces/Cinzel-Medium.ttf",
+      "sha1": "461f559b5df84aa8cabca9fbea702275c00cdce8"
+    },
+    {
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialTypefaces/Cinzel-Regular.ttf",
+      "sha1": "e69b593cf3181656bb3634477f0ceb0089846645"
+    },
+    {
+      "path": "ResortGuideMondial/ResortGuideMondialReliquary/ResortGuideMondialTypefaces/Cinzel-SemiBold.ttf",
+      "sha1": "4b4d4822a26728e680a5f0ea9a8957ca2d5c84d2"
     }
   ]
 }
