@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {ResortGuideMondialSavedProvider} from './ResortGuideMondial/ResortGuideMondialEssenceVessel/ResortGuideMondialSavedContext';
-import {ResortGuideMondialIntroScreen} from './ResortGuideMondial/ResortGuideMondialPanorama/ResortGuideMondialVestibulePane/ResortGuideMondialIntroScreen';
-import {ResortGuideMondialLoaderScreen} from './ResortGuideMondial/ResortGuideMondialPanorama/ResortGuideMondialThresholdPane/ResortGuideMondialLoaderScreen';
-import {ResortGuideMondialRouterino} from './ResortGuideMondial/ResortGuideMondialRouterino/ResortGuideMondialRouterino';
+import {ResortMondialGuideCasinoSavedProvider} from './ResortMondialGuideCasino/ResortMondialGuideCasinoEssenceVessel/ResortMondialGuideCasinoSavedContext';
+import {ResortMondialGuideCasinoIntroScreen} from './ResortMondialGuideCasino/ResortMondialGuideCasinoPanorama/ResortMondialGuideCasinoVestibulePane/ResortMondialGuideCasinoIntroScreen';
+import {ResortMondialGuideCasinoLoaderScreen} from './ResortMondialGuideCasino/ResortMondialGuideCasinoPanorama/ResortMondialGuideCasinoThresholdPane/ResortMondialGuideCasinoLoaderScreen';
+import {ResortMondialGuideCasinoRouterino} from './ResortMondialGuideCasino/ResortMondialGuideCasinoRouterino/ResortMondialGuideCasinoRouterino';
 
 function App(): React.JSX.Element {
   const [loaderDone, setLoaderDone] = useState(false);
@@ -12,13 +12,13 @@ function App(): React.JSX.Element {
   return (
     <SafeAreaProvider>
       {!loaderDone ? (
-        <ResortGuideMondialLoaderScreen onFinish={() => setLoaderDone(true)} />
+        <ResortMondialGuideCasinoLoaderScreen onFinish={() => setLoaderDone(true)} />
       ) : introDone ? (
-        <ResortGuideMondialSavedProvider>
-          <ResortGuideMondialRouterino />
-        </ResortGuideMondialSavedProvider>
+        <ResortMondialGuideCasinoSavedProvider>
+          <ResortMondialGuideCasinoRouterino />
+        </ResortMondialGuideCasinoSavedProvider>
       ) : (
-        <ResortGuideMondialIntroScreen onFinish={() => setIntroDone(true)} />
+        <ResortMondialGuideCasinoIntroScreen onFinish={() => setIntroDone(true)} />
       )}
     </SafeAreaProvider>
   );

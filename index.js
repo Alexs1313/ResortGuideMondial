@@ -7,3 +7,5 @@ import App from './App';
 import {name as appName} from './app.json';
 
 AppRegistry.registerComponent(appName, () => App);
+// Legacy name from pre-rename native builds still on device/simulator.
+AppRegistry.registerComponent('ResortGuideMondial', () => App);

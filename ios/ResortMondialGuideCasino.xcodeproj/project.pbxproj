@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		067EB57D81934259B829EACD /* resort_mondial_guide_casino_loader_logo_android.png in Resources */ = {isa = PBXBuildFile; fileRef = FF23A14B6EB54FCEA85C6BFA /* resort_mondial_guide_casino_loader_logo_android.png */; };
+		07E25E3D794340EAB9C3BF8E /* resort_mondial_guide_casino_venue_sapphire_lounge.png in Resources */ = {isa = PBXBuildFile; fileRef = 9698D5904E2F4FA7A53FA8BF /* resort_mondial_guide_casino_venue_sapphire_lounge.png */; };
+		08330FB819F941E9B5932BA9 /* resort_mondial_guide_casino_tab_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 087F65939D894E6BB560CC7C /* resort_mondial_guide_casino_tab_calendar.png */; };
+		0C80B921A6F3F58F76C31292 /* libPods-ResortMondialGuideCasino.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-ResortMondialGuideCasino.a */; };
+		0F8C78C2D69F42CA9BF72D79 /* resort_mondial_guide_casino_icon_location.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A2FBB69CA14C32B7F49BC5 /* resort_mondial_guide_casino_icon_location.png */; };
+		13A1C6F9BE8E4033813FBBF0 /* resort_mondial_guide_casino_icon_clock.png in Resources */ = {isa = PBXBuildFile; fileRef = A4DA76E8B30847D0B72446A5 /* resort_mondial_guide_casino_icon_clock.png */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		19006817D4E24FB2B551BDB4 /* resort_mondial_guide_casino_icon_saved_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 85C3307807BA456A9B338FE7 /* resort_mondial_guide_casino_icon_saved_active.png */; };
+		194ECAC442AA43878424E382 /* resort_mondial_guide_casino_venue_celebration_suite.png in Resources */ = {isa = PBXBuildFile; fileRef = 704847E0AED14747ADD6405B /* resort_mondial_guide_casino_venue_celebration_suite.png */; };
+		1A017641F02B490BAE2814DF /* resort_mondial_guide_casino_venue_private_chef.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D32661E6F57418095DAE389 /* resort_mondial_guide_casino_venue_private_chef.png */; };
+		3F73C761AA0F413B8FAA1AB7 /* resort_mondial_guide_casino_venue_le_salon.png in Resources */ = {isa = PBXBuildFile; fileRef = F0F6CD7862AF4070A25F63BA /* resort_mondial_guide_casino_venue_le_salon.png */; };
+		3FC5CB4ECF21456687D8EAA2 /* resort_mondial_guide_casino_venue_premier_family.png in Resources */ = {isa = PBXBuildFile; fileRef = CB884B9165674AB49F97F635 /* resort_mondial_guide_casino_venue_premier_family.png */; };
+		43E8986968624FBAAE9B0897 /* resort_mondial_guide_casino_tab_guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 832404A467104F3880571859 /* resort_mondial_guide_casino_tab_guide.png */; };
+		444D2D4AB8CF4C2CB8C064CF /* Cinzel-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEC82EA9373A4140BFE07BBA /* Cinzel-ExtraBold.ttf */; };
+		456DE49C7D424A7EB2B3B7DA /* Cinzel-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63BE0457E22E415E9FEC8119 /* Cinzel-SemiBold.ttf */; };
+		499DBA4C9A76451A94152B80 /* resort_mondial_guide_casino_venue_deluxe_king.png in Resources */ = {isa = PBXBuildFile; fileRef = AA6B9A31F2CE4000B15239DF /* resort_mondial_guide_casino_venue_deluxe_king.png */; };
+		4ADE968E49174C2A827CFA37 /* resort_mondial_guide_casino_icon_search.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F353CE99E2A48DDABDA632B /* resort_mondial_guide_casino_icon_search.png */; };
+		62BF39DF53E043229011472B /* resort_mondial_guide_casino_venue_classic_comfort.png in Resources */ = {isa = PBXBuildFile; fileRef = 05114FF9DEC54CACBA0020EF /* resort_mondial_guide_casino_venue_classic_comfort.png */; };
+		6746D071DEAD4C85B67EB1C4 /* resort_mondial_guide_casino_tab_services.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C37270D2B3140598939CC3D /* resort_mondial_guide_casino_tab_services.png */; };
+		6A85CA75F634402AA4804E4D /* resort_mondial_guide_casino_venue_royal_suite.png in Resources */ = {isa = PBXBuildFile; fileRef = F81C313659B640EEA0A9702F /* resort_mondial_guide_casino_venue_royal_suite.png */; };
+		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		88027B051C664080BB133B8F /* resort_mondial_guide_casino_venue_panorama_suite.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD51EE6C4904CCCA53CE19A /* resort_mondial_guide_casino_venue_panorama_suite.png */; };
+		904EF3B7B6D94AD799F0EEFD /* resort_mondial_guide_casino_venue_atrium_lounge.png in Resources */ = {isa = PBXBuildFile; fileRef = 766A8EFA4FAD4ECCB741A318 /* resort_mondial_guide_casino_venue_atrium_lounge.png */; };
+		9556791B5A5D4593A369B18F /* resort_mondial_guide_casino_loader_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E136BE1935442DF82F9FA4A /* resort_mondial_guide_casino_loader_bg.png */; };
+		9815AE0FD1DB4D86BE74B180 /* resort_mondial_guide_casino_venue_velvet_dining_hall.png in Resources */ = {isa = PBXBuildFile; fileRef = 24A386F7C5F44286A81FB9A4 /* resort_mondial_guide_casino_venue_velvet_dining_hall.png */; };
+		9B01FAC564C143429CED5D40 /* Cinzel-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F22E550B17084BB4BAEBE1F9 /* Cinzel-Black.ttf */; };
+		A037CD60782E47148DF8D8EE /* resort_mondial_guide_casino_venue_midnight_lounge.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D9F392C84E4A2BBC474314 /* resort_mondial_guide_casino_venue_midnight_lounge.png */; };
+		A240E5E81EDB7CB3DBCFBC8D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		A4F7AB7A4AD14134B7F99578 /* resort_mondial_guide_casino_onboard_hero_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A35C50D35644DBDB8E7F56D /* resort_mondial_guide_casino_onboard_hero_1.png */; };
+		A8846C1C70344071BBFC244F /* resort_mondial_guide_casino_icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 454C9EB2DCC84ECFA644DBFA /* resort_mondial_guide_casino_icon_back.png */; };
+		ABB0E45ED8CD470D8570412E /* Cinzel-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63A7E4457BDA433983976FAE /* Cinzel-Bold.ttf */; };
+		ACC472E7612146CD8A2B836D /* resort_mondial_guide_casino_icon_saved.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B83FF99D2D4B37B76466CA /* resort_mondial_guide_casino_icon_saved.png */; };
+		B127D469991248E2AA05D958 /* resort_mondial_guide_casino_venue_garden_dining.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D4CB7B53194B5E84A897D6 /* resort_mondial_guide_casino_venue_garden_dining.png */; };
+		B340D4A8922241CE97CE9164 /* resort_mondial_guide_casino_venue_executive_twin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4169AD265B3149B8ABFE74EC /* resort_mondial_guide_casino_venue_executive_twin.png */; };
+		B8CFE4F80DB34D4AA0F9484D /* resort_mondial_guide_casino_venue_aurora_breakfast.png in Resources */ = {isa = PBXBuildFile; fileRef = F847D191109B41BCAF5CE7C8 /* resort_mondial_guide_casino_venue_aurora_breakfast.png */; };
+		C0A73CC7870D4C9298FFDF09 /* resort_mondial_guide_casino_venue_banquet_room.png in Resources */ = {isa = PBXBuildFile; fileRef = A1DACF300DB1491194D4B1EF /* resort_mondial_guide_casino_venue_banquet_room.png */; };
+		CA2F25084A94486EB9BD5280 /* resort_mondial_guide_casino_onboard_hero_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 36716FD2FC94487F8029A6CE /* resort_mondial_guide_casino_onboard_hero_2.png */; };
+		D7DFEC5F7F3E418ABD7EDA62 /* resort_mondial_guide_casino_img_empty_saved.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE07D7269F54FD291B4057F /* resort_mondial_guide_casino_img_empty_saved.png */; };
+		DA3E1FA764454783A5EF7DD8 /* resort_mondial_guide_casino_tab_events.png in Resources */ = {isa = PBXBuildFile; fileRef = 962D4432E3AA4F828BAA4442 /* resort_mondial_guide_casino_tab_events.png */; };
+		DC55D839A8AD44AD92671252 /* resort_mondial_guide_casino_loader_logo_ios.png in Resources */ = {isa = PBXBuildFile; fileRef = AAC7B08C7CDC4DA2A10149EA /* resort_mondial_guide_casino_loader_logo_ios.png */; };
+		DD9DE2DC9CDB491A8F04AA46 /* Cinzel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D523F4A8F6457DBF8DAB91 /* Cinzel-Regular.ttf */; };
+		E0A42ACB35D948138B99CDD7 /* resort_mondial_guide_casino_venue_maison_terrace.png in Resources */ = {isa = PBXBuildFile; fileRef = A276E1394E9C4029B61016B1 /* resort_mondial_guide_casino_venue_maison_terrace.png */; };
+		EE2A4D8B43D94CE5969B00AE /* resort_mondial_guide_casino_tab_saved.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B27165F1F544BB1AB60EC9B /* resort_mondial_guide_casino_tab_saved.png */; };
+		EEF3944E1AC540948E915EA7 /* resort_mondial_guide_casino_onboard_hero_3.png in Resources */ = {isa = PBXBuildFile; fileRef = E12DFDC60C054A75B49FF100 /* resort_mondial_guide_casino_onboard_hero_3.png */; };
+		FA95B8CD04264C42B4B95473 /* Cinzel-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F907F8E7BA84696800965ED /* Cinzel-Medium.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05114FF9DEC54CACBA0020EF /* resort_mondial_guide_casino_venue_classic_comfort.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_classic_comfort.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_classic_comfort.png; sourceTree = "<group>"; };
+		05D4CB7B53194B5E84A897D6 /* resort_mondial_guide_casino_venue_garden_dining.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_garden_dining.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_garden_dining.png; sourceTree = "<group>"; };
+		087F65939D894E6BB560CC7C /* resort_mondial_guide_casino_tab_calendar.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_tab_calendar.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_tab_calendar.png; sourceTree = "<group>"; };
+		0CE07D7269F54FD291B4057F /* resort_mondial_guide_casino_img_empty_saved.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_img_empty_saved.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_img_empty_saved.png; sourceTree = "<group>"; };
+		0E136BE1935442DF82F9FA4A /* resort_mondial_guide_casino_loader_bg.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_loader_bg.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_loader_bg.png; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* ResortMondialGuideCasino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResortMondialGuideCasino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ResortMondialGuideCasino/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ResortMondialGuideCasino/Info.plist; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ResortMondialGuideCasino/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		24A386F7C5F44286A81FB9A4 /* resort_mondial_guide_casino_venue_velvet_dining_hall.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_velvet_dining_hall.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_velvet_dining_hall.png; sourceTree = "<group>"; };
+		2D32661E6F57418095DAE389 /* resort_mondial_guide_casino_venue_private_chef.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_private_chef.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_private_chef.png; sourceTree = "<group>"; };
+		31A2FBB69CA14C32B7F49BC5 /* resort_mondial_guide_casino_icon_location.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_icon_location.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_icon_location.png; sourceTree = "<group>"; };
+		36716FD2FC94487F8029A6CE /* resort_mondial_guide_casino_onboard_hero_2.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_onboard_hero_2.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_onboard_hero_2.png; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-ResortMondialGuideCasino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResortMondialGuideCasino.debug.xcconfig"; path = "Target Support Files/Pods-ResortMondialGuideCasino/Pods-ResortMondialGuideCasino.debug.xcconfig"; sourceTree = "<group>"; };
+		3F907F8E7BA84696800965ED /* Cinzel-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Medium.ttf"; path = "../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoTypefaces/Cinzel-Medium.ttf"; sourceTree = "<group>"; };
+		4169AD265B3149B8ABFE74EC /* resort_mondial_guide_casino_venue_executive_twin.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_executive_twin.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_executive_twin.png; sourceTree = "<group>"; };
+		44D523F4A8F6457DBF8DAB91 /* Cinzel-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Regular.ttf"; path = "../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoTypefaces/Cinzel-Regular.ttf"; sourceTree = "<group>"; };
+		454C9EB2DCC84ECFA644DBFA /* resort_mondial_guide_casino_icon_back.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_icon_back.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_icon_back.png; sourceTree = "<group>"; };
+		52D9F392C84E4A2BBC474314 /* resort_mondial_guide_casino_venue_midnight_lounge.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_midnight_lounge.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_midnight_lounge.png; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-ResortMondialGuideCasino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResortMondialGuideCasino.release.xcconfig"; path = "Target Support Files/Pods-ResortMondialGuideCasino/Pods-ResortMondialGuideCasino.release.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-ResortMondialGuideCasino.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ResortMondialGuideCasino.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A7E4457BDA433983976FAE /* Cinzel-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Bold.ttf"; path = "../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoTypefaces/Cinzel-Bold.ttf"; sourceTree = "<group>"; };
+		63BE0457E22E415E9FEC8119 /* Cinzel-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-SemiBold.ttf"; path = "../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoTypefaces/Cinzel-SemiBold.ttf"; sourceTree = "<group>"; };
+		6B27165F1F544BB1AB60EC9B /* resort_mondial_guide_casino_tab_saved.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_tab_saved.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_tab_saved.png; sourceTree = "<group>"; };
+		704847E0AED14747ADD6405B /* resort_mondial_guide_casino_venue_celebration_suite.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_celebration_suite.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_celebration_suite.png; sourceTree = "<group>"; };
+		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ResortMondialGuideCasino/AppDelegate.swift; sourceTree = "<group>"; };
+		766A8EFA4FAD4ECCB741A318 /* resort_mondial_guide_casino_venue_atrium_lounge.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_atrium_lounge.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_atrium_lounge.png; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ResortMondialGuideCasino/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		832404A467104F3880571859 /* resort_mondial_guide_casino_tab_guide.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_tab_guide.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_tab_guide.png; sourceTree = "<group>"; };
+		85C3307807BA456A9B338FE7 /* resort_mondial_guide_casino_icon_saved_active.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_icon_saved_active.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_icon_saved_active.png; sourceTree = "<group>"; };
+		8A35C50D35644DBDB8E7F56D /* resort_mondial_guide_casino_onboard_hero_1.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_onboard_hero_1.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_onboard_hero_1.png; sourceTree = "<group>"; };
+		8C37270D2B3140598939CC3D /* resort_mondial_guide_casino_tab_services.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_tab_services.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_tab_services.png; sourceTree = "<group>"; };
+		8F353CE99E2A48DDABDA632B /* resort_mondial_guide_casino_icon_search.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_icon_search.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_icon_search.png; sourceTree = "<group>"; };
+		962D4432E3AA4F828BAA4442 /* resort_mondial_guide_casino_tab_events.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_tab_events.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_tab_events.png; sourceTree = "<group>"; };
+		9698D5904E2F4FA7A53FA8BF /* resort_mondial_guide_casino_venue_sapphire_lounge.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_sapphire_lounge.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_sapphire_lounge.png; sourceTree = "<group>"; };
+		A1DACF300DB1491194D4B1EF /* resort_mondial_guide_casino_venue_banquet_room.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_banquet_room.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_banquet_room.png; sourceTree = "<group>"; };
+		A276E1394E9C4029B61016B1 /* resort_mondial_guide_casino_venue_maison_terrace.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_maison_terrace.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_maison_terrace.png; sourceTree = "<group>"; };
+		A4DA76E8B30847D0B72446A5 /* resort_mondial_guide_casino_icon_clock.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_icon_clock.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_icon_clock.png; sourceTree = "<group>"; };
+		AA6B9A31F2CE4000B15239DF /* resort_mondial_guide_casino_venue_deluxe_king.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_deluxe_king.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_deluxe_king.png; sourceTree = "<group>"; };
+		AAC7B08C7CDC4DA2A10149EA /* resort_mondial_guide_casino_loader_logo_ios.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_loader_logo_ios.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_loader_logo_ios.png; sourceTree = "<group>"; };
+		AEC82EA9373A4140BFE07BBA /* Cinzel-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-ExtraBold.ttf"; path = "../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoTypefaces/Cinzel-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B0B83FF99D2D4B37B76466CA /* resort_mondial_guide_casino_icon_saved.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_icon_saved.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_icon_saved.png; sourceTree = "<group>"; };
+		CB884B9165674AB49F97F635 /* resort_mondial_guide_casino_venue_premier_family.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_premier_family.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_premier_family.png; sourceTree = "<group>"; };
+		DCD51EE6C4904CCCA53CE19A /* resort_mondial_guide_casino_venue_panorama_suite.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_panorama_suite.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_panorama_suite.png; sourceTree = "<group>"; };
+		E12DFDC60C054A75B49FF100 /* resort_mondial_guide_casino_onboard_hero_3.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_onboard_hero_3.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_onboard_hero_3.png; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F0F6CD7862AF4070A25F63BA /* resort_mondial_guide_casino_venue_le_salon.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_le_salon.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_le_salon.png; sourceTree = "<group>"; };
+		F22E550B17084BB4BAEBE1F9 /* Cinzel-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Black.ttf"; path = "../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoTypefaces/Cinzel-Black.ttf"; sourceTree = "<group>"; };
+		F81C313659B640EEA0A9702F /* resort_mondial_guide_casino_venue_royal_suite.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_royal_suite.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_royal_suite.png; sourceTree = "<group>"; };
+		F847D191109B41BCAF5CE7C8 /* resort_mondial_guide_casino_venue_aurora_breakfast.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_venue_aurora_breakfast.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_venue_aurora_breakfast.png; sourceTree = "<group>"; };
+		FF23A14B6EB54FCEA85C6BFA /* resort_mondial_guide_casino_loader_logo_android.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = resort_mondial_guide_casino_loader_logo_android.png; path = ../ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/resort_mondial_guide_casino_loader_logo_android.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-ResortMondialGuideCasino.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B07FAE1A68108700A75B9A /* ResortMondialGuideCasino */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				761780EC2CA45674006654EE /* AppDelegate.swift */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+			);
+			name = ResortMondialGuideCasino;
+			sourceTree = "<group>";
+		};
+		281742B364544BC99AE76FEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F22E550B17084BB4BAEBE1F9 /* Cinzel-Black.ttf */,
+				63A7E4457BDA433983976FAE /* Cinzel-Bold.ttf */,
+				63BE0457E22E415E9FEC8119 /* Cinzel-SemiBold.ttf */,
+				3F907F8E7BA84696800965ED /* Cinzel-Medium.ttf */,
+				44D523F4A8F6457DBF8DAB91 /* Cinzel-Regular.ttf */,
+				AEC82EA9373A4140BFE07BBA /* Cinzel-ExtraBold.ttf */,
+				704847E0AED14747ADD6405B /* resort_mondial_guide_casino_venue_celebration_suite.png */,
+				F0F6CD7862AF4070A25F63BA /* resort_mondial_guide_casino_venue_le_salon.png */,
+				087F65939D894E6BB560CC7C /* resort_mondial_guide_casino_tab_calendar.png */,
+				AA6B9A31F2CE4000B15239DF /* resort_mondial_guide_casino_venue_deluxe_king.png */,
+				F81C313659B640EEA0A9702F /* resort_mondial_guide_casino_venue_royal_suite.png */,
+				454C9EB2DCC84ECFA644DBFA /* resort_mondial_guide_casino_icon_back.png */,
+				962D4432E3AA4F828BAA4442 /* resort_mondial_guide_casino_tab_events.png */,
+				0CE07D7269F54FD291B4057F /* resort_mondial_guide_casino_img_empty_saved.png */,
+				8F353CE99E2A48DDABDA632B /* resort_mondial_guide_casino_icon_search.png */,
+				CB884B9165674AB49F97F635 /* resort_mondial_guide_casino_venue_premier_family.png */,
+				A4DA76E8B30847D0B72446A5 /* resort_mondial_guide_casino_icon_clock.png */,
+				A276E1394E9C4029B61016B1 /* resort_mondial_guide_casino_venue_maison_terrace.png */,
+				A1DACF300DB1491194D4B1EF /* resort_mondial_guide_casino_venue_banquet_room.png */,
+				24A386F7C5F44286A81FB9A4 /* resort_mondial_guide_casino_venue_velvet_dining_hall.png */,
+				05114FF9DEC54CACBA0020EF /* resort_mondial_guide_casino_venue_classic_comfort.png */,
+				DCD51EE6C4904CCCA53CE19A /* resort_mondial_guide_casino_venue_panorama_suite.png */,
+				2D32661E6F57418095DAE389 /* resort_mondial_guide_casino_venue_private_chef.png */,
+				B0B83FF99D2D4B37B76466CA /* resort_mondial_guide_casino_icon_saved.png */,
+				31A2FBB69CA14C32B7F49BC5 /* resort_mondial_guide_casino_icon_location.png */,
+				832404A467104F3880571859 /* resort_mondial_guide_casino_tab_guide.png */,
+				85C3307807BA456A9B338FE7 /* resort_mondial_guide_casino_icon_saved_active.png */,
+				F847D191109B41BCAF5CE7C8 /* resort_mondial_guide_casino_venue_aurora_breakfast.png */,
+				FF23A14B6EB54FCEA85C6BFA /* resort_mondial_guide_casino_loader_logo_android.png */,
+				766A8EFA4FAD4ECCB741A318 /* resort_mondial_guide_casino_venue_atrium_lounge.png */,
+				36716FD2FC94487F8029A6CE /* resort_mondial_guide_casino_onboard_hero_2.png */,
+				8C37270D2B3140598939CC3D /* resort_mondial_guide_casino_tab_services.png */,
+				52D9F392C84E4A2BBC474314 /* resort_mondial_guide_casino_venue_midnight_lounge.png */,
+				AAC7B08C7CDC4DA2A10149EA /* resort_mondial_guide_casino_loader_logo_ios.png */,
+				E12DFDC60C054A75B49FF100 /* resort_mondial_guide_casino_onboard_hero_3.png */,
+				8A35C50D35644DBDB8E7F56D /* resort_mondial_guide_casino_onboard_hero_1.png */,
+				0E136BE1935442DF82F9FA4A /* resort_mondial_guide_casino_loader_bg.png */,
+				6B27165F1F544BB1AB60EC9B /* resort_mondial_guide_casino_tab_saved.png */,
+				9698D5904E2F4FA7A53FA8BF /* resort_mondial_guide_casino_venue_sapphire_lounge.png */,
+				4169AD265B3149B8ABFE74EC /* resort_mondial_guide_casino_venue_executive_twin.png */,
+				05D4CB7B53194B5E84A897D6 /* resort_mondial_guide_casino_venue_garden_dining.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-ResortMondialGuideCasino.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* ResortMondialGuideCasino */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				281742B364544BC99AE76FEB /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* ResortMondialGuideCasino.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-ResortMondialGuideCasino.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-ResortMondialGuideCasino.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* ResortMondialGuideCasino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ResortMondialGuideCasino" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ResortMondialGuideCasino;
+			productName = ResortMondialGuideCasino;
+			productReference = 13B07F961A680F5B00A75B9A /* ResortMondialGuideCasino.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ResortMondialGuideCasino" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* ResortMondialGuideCasino */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A240E5E81EDB7CB3DBCFBC8D /* PrivacyInfo.xcprivacy in Resources */,
+				9B01FAC564C143429CED5D40 /* Cinzel-Black.ttf in Resources */,
+				ABB0E45ED8CD470D8570412E /* Cinzel-Bold.ttf in Resources */,
+				456DE49C7D424A7EB2B3B7DA /* Cinzel-SemiBold.ttf in Resources */,
+				FA95B8CD04264C42B4B95473 /* Cinzel-Medium.ttf in Resources */,
+				DD9DE2DC9CDB491A8F04AA46 /* Cinzel-Regular.ttf in Resources */,
+				444D2D4AB8CF4C2CB8C064CF /* Cinzel-ExtraBold.ttf in Resources */,
+				194ECAC442AA43878424E382 /* resort_mondial_guide_casino_venue_celebration_suite.png in Resources */,
+				3F73C761AA0F413B8FAA1AB7 /* resort_mondial_guide_casino_venue_le_salon.png in Resources */,
+				08330FB819F941E9B5932BA9 /* resort_mondial_guide_casino_tab_calendar.png in Resources */,
+				499DBA4C9A76451A94152B80 /* resort_mondial_guide_casino_venue_deluxe_king.png in Resources */,
+				6A85CA75F634402AA4804E4D /* resort_mondial_guide_casino_venue_royal_suite.png in Resources */,
+				A8846C1C70344071BBFC244F /* resort_mondial_guide_casino_icon_back.png in Resources */,
+				DA3E1FA764454783A5EF7DD8 /* resort_mondial_guide_casino_tab_events.png in Resources */,
+				D7DFEC5F7F3E418ABD7EDA62 /* resort_mondial_guide_casino_img_empty_saved.png in Resources */,
+				4ADE968E49174C2A827CFA37 /* resort_mondial_guide_casino_icon_search.png in Resources */,
+				3FC5CB4ECF21456687D8EAA2 /* resort_mondial_guide_casino_venue_premier_family.png in Resources */,
+				13A1C6F9BE8E4033813FBBF0 /* resort_mondial_guide_casino_icon_clock.png in Resources */,
+				E0A42ACB35D948138B99CDD7 /* resort_mondial_guide_casino_venue_maison_terrace.png in Resources */,
+				C0A73CC7870D4C9298FFDF09 /* resort_mondial_guide_casino_venue_banquet_room.png in Resources */,
+				9815AE0FD1DB4D86BE74B180 /* resort_mondial_guide_casino_venue_velvet_dining_hall.png in Resources */,
+				62BF39DF53E043229011472B /* resort_mondial_guide_casino_venue_classic_comfort.png in Resources */,
+				88027B051C664080BB133B8F /* resort_mondial_guide_casino_venue_panorama_suite.png in Resources */,
+				1A017641F02B490BAE2814DF /* resort_mondial_guide_casino_venue_private_chef.png in Resources */,
+				ACC472E7612146CD8A2B836D /* resort_mondial_guide_casino_icon_saved.png in Resources */,
+				0F8C78C2D69F42CA9BF72D79 /* resort_mondial_guide_casino_icon_location.png in Resources */,
+				43E8986968624FBAAE9B0897 /* resort_mondial_guide_casino_tab_guide.png in Resources */,
+				19006817D4E24FB2B551BDB4 /* resort_mondial_guide_casino_icon_saved_active.png in Resources */,
+				B8CFE4F80DB34D4AA0F9484D /* resort_mondial_guide_casino_venue_aurora_breakfast.png in Resources */,
+				067EB57D81934259B829EACD /* resort_mondial_guide_casino_loader_logo_android.png in Resources */,
+				904EF3B7B6D94AD799F0EEFD /* resort_mondial_guide_casino_venue_atrium_lounge.png in Resources */,
+				CA2F25084A94486EB9BD5280 /* resort_mondial_guide_casino_onboard_hero_2.png in Resources */,
+				6746D071DEAD4C85B67EB1C4 /* resort_mondial_guide_casino_tab_services.png in Resources */,
+				A037CD60782E47148DF8D8EE /* resort_mondial_guide_casino_venue_midnight_lounge.png in Resources */,
+				DC55D839A8AD44AD92671252 /* resort_mondial_guide_casino_loader_logo_ios.png in Resources */,
+				EEF3944E1AC540948E915EA7 /* resort_mondial_guide_casino_onboard_hero_3.png in Resources */,
+				A4F7AB7A4AD14134B7F99578 /* resort_mondial_guide_casino_onboard_hero_1.png in Resources */,
+				9556791B5A5D4593A369B18F /* resort_mondial_guide_casino_loader_bg.png in Resources */,
+				EE2A4D8B43D94CE5969B00AE /* resort_mondial_guide_casino_tab_saved.png in Resources */,
+				07E25E3D794340EAB9C3BF8E /* resort_mondial_guide_casino_venue_sapphire_lounge.png in Resources */,
+				B340D4A8922241CE97CE9164 /* resort_mondial_guide_casino_venue_executive_twin.png in Resources */,
+				B127D469991248E2AA05D958 /* resort_mondial_guide_casino_venue_garden_dining.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ResortMondialGuideCasino/Pods-ResortMondialGuideCasino-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ResortMondialGuideCasino/Pods-ResortMondialGuideCasino-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ResortMondialGuideCasino/Pods-ResortMondialGuideCasino-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ResortMondialGuideCasino-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ResortMondialGuideCasino/Pods-ResortMondialGuideCasino-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ResortMondialGuideCasino/Pods-ResortMondialGuideCasino-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ResortMondialGuideCasino/Pods-ResortMondialGuideCasino-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-ResortMondialGuideCasino.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ResortMondialGuideCasino/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdfdsfsgd.jsiqwuejksdjnaf;
+				PRODUCT_NAME = ResortMondialGuideCasino;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-ResortMondialGuideCasino.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = ResortMondialGuideCasino/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdfdsfsgd.jsiqwuejksdjnaf;
+				PRODUCT_NAME = ResortMondialGuideCasino;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				OTHER_LDFLAGS = "$(inherited)  ";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				OTHER_LDFLAGS = "$(inherited)  ";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ResortMondialGuideCasino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ResortMondialGuideCasino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
