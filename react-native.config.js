@@ -1,6 +1,3 @@
 module.exports = {
-  assets: [
-    './ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoTypefaces/',
-    './ResortMondialGuideCasino/ResortMondialGuideCasinoReliquary/ResortMondialGuideCasinoImagery/',
-  ],
+  assets: ['./src/assets/fonts/', './src/assets/'],
 };

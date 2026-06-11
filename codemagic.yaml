@@ -4,17 +4,17 @@ workflows:
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
-      app_store_connect: KaarelUustaluAPIKey
+      app_store_connect: KaarelUustaluKey
     environment:
       xcode: '26.0'
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.sdfdsfsgd.jsiqwuejksdjnaf
+        bundle_identifier: com.aksdklmalsklm.resortguidemondial
       vars:
-        BUNDLE_ID: com.sdfdsfsgd.jsiqwuejksdjnaf
+        BUNDLE_ID: com.aksdklmalsklm.resortguidemondial
         XCODE_WORKSPACE: ResortMondialGuideCasino.xcworkspace
         XCODE_SCHEME: ResortMondialGuideCasino
-        APP_STORE_APPLE_ID: 6778884259
+        APP_STORE_APPLE_ID: 6779202651
     scripts:
       - name: Install npm dependencies
         script: |
